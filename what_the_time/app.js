@@ -1,0 +1,1 @@
+angular.module('timezoneApp' , ['timezoneApp.controllers']);

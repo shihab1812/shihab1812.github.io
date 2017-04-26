@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="timezoneApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik|Rubik+Mono+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <script src="libs/angular/angular.js"></script>
+</head>
+
+<body ng-controller="mainController" ng-cloak>
+    <!-- Nav bar for the app -->
+    <nav class="main-nav clearfix">
+        <div class="container">
+            <header>
+                <ul class="links pull-right list-inline">
+                    <li class="pro-img-holder"></li>
+                    <li>WHAT THE TIME</li>
+                </ul>
+            </header>
+            <ul class="links pull-right list-inline">
+                <li><strong>SHIHAB PM </strong></li>
+                <li class="pro-img-holder" style="border-radius: 4px;"></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- / End of Nav bar for the app -->
+    <!-- Hero Section for the app -->
+    <section class="app-hero-section">
+        <main class="container">
+            <header class="">
+                <h1 class="text-center">Time Machine of the world</h1>
+                <h2>
+                    <small class="white text-center block">Lorem Awesome text some text missing</small>
+                </h2>
+            </header>
+            <section class="row country-searcher-section">
+                <div class="col-md-offset-2 col-md-6 main-search-filter-wrapper pos-rel">
+                    <div class="row clearfix">
+                        <div class="col-md-1 well search-bar-flag-holder">
+                            <img ng-src="img/svgs/flags/{{cur_flag}}"  style="width:25px;" alt="">
+                        </div>
+                        <div class="col-md-11 no-padding">
+                            <input type="text" class="form-control search-country" ng-model="searchText" ng-click="openSelect(searchText)" placeholder="Search Any Country">
+                            <i class="fa fa-angle-down pos-abs inc-anchor-down" aria-hidden="true"></i>
+                            <ul class="hidden-search-filter list-unstyled" ng-hide="flag">
+                                <li ng-repeat="continent in continents | filter:searchText">
+                                    <span ng-repeat="country in continent.countries"> 
+                                 <span ng-repeat="state in country.states" class="block  major-con-state-listing" ng-click="selectCountry(country.nation, state.name , state.tz, country.flag)"> {{country.nation | uppercase}} -  &nbsp;&nbsp; <span class="avail-states-appender">{{state.name}} </span>                                    &nbsp;&nbsp; <span class="avail-states-appender">( {{state.tz}} ) </span> </span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 trigger-search-btn-wrapper">
+                    <button class="btn btn-block btn-danger trigger-search-btn" ng-click="triggerSearchBtn()" ng-disabled="mainTriggerBtnFlag">GET TIME</button>
+                </div>
+            </section>
+        </main>
+    </section>
+    <!-- / End of Hero Section for the app -->
+    <!--Main Section -->
+    <section class="time-result clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6">
+                    <div class="card white-theme" ng-class="{'black-theme': extractHours >= 17}">
+                        <header>
+                            <span><img ng-src="img/svgs/flags/{{cur_flag1}}" alt="" style="width:40px;height: 25px;"></span><span> &nbsp;&nbsp;<strong>{{countryNameCardHead}} - </strong>  </span><span>{{stateNameCardhead}}</span>
+                            <!--<h4>{{searchText}} <small> {{state.nation}}</small></h4> -->
+                            <span class="pull-right"><img  ng-src="img/pngs/{{getGrettingImg}}" style="height: 22px;" alt=""></span>
+                        </header>
+                        <ul class="h-m-s-holder list-unstyled list-inline pos-rel">
+                            <li class="col-md-4 hour-ticker"><sup> / Hour </sup><span class="time-appender">{{curTime | date:'HH':v_timezone}} </span></li>
+                            <li class="col-md-4 min-ticker"><sup> / Min </sup><span class="time-appender">{{curTime | date:'m':v_timezone}} </span></li>
+                            <li class="col-md-4 sec-ticker"><sup> / Sec </sup><span class="time-appender">{{curTime | date:'s':v_timezone}} </span></li>
+                            <li class="pos-abs well main-time-change-loader" ng-hide="loaderVisiblity">
+                                <div class="loader">
+                                    <svg class="circular" viewBox="25 25 50 50">
+                                        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+                                    </svg>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Main Section -->
+</body>
+<script src="app.js"></script>
+<script src="js/controllers.js"></script>
+
+</html>
