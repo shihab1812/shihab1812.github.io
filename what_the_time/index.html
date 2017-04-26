@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-   
+
     <title>Document</title>
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/app.css">
@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <script src="libs/angular/angular.js"></script>
-   
+
 </head>
 
 <body ng-controller="mainController" ng-cloak>
@@ -39,8 +39,8 @@
                     <small class="white text-center block">Lorem Awesome text some text missing</small>
                 </h2>
             </header>
-            
-           
+
+
             <section class="row country-searcher-section">
                 <div class="col-md-offset-2 col-md-6 main-search-filter-wrapper pos-rel">
                     <div class="row clearfix">
@@ -52,10 +52,10 @@
                             <i class="fa fa-angle-down pos-abs inc-anchor-down" aria-hidden="true"></i>
                             <ul class="hidden-search-filter list-unstyled" ng-hide="flag">
                                 <li ng-repeat="continent in continents | filter:searchText">
-                                  
+
 
                                     <span ng-repeat="country in continent.countries | filter:searchText"> 
-                                 <span ng-repeat="state in country.states" class="block  major-con-state-listing" ng-click="selectCountry(country.nation, state.name , state.tz, country.flag)"><img ng-src="img/svgs/flags/{{country.flag}}" style="width: 25px;" alt="">&nbsp; &nbsp;{{country.nation | uppercase}} &nbsp; <span class="avail-states-appender">-  &nbsp;  {{state.name}} </span>                                    &nbsp;&nbsp;  </span>
+                                 <span ng-repeat="state in country.states" class="block  major-con-state-listing" ng-click="selectCountry(country.nation, state.name , state.tz, country.flag)"><img ng-src="img/svgs/flags/{{country.flag}}" style="width: 25px;" alt="">&nbsp; &nbsp;{{country.nation | uppercase}} &nbsp; <span class="avail-states-appender">-  &nbsp;  {{state.name}} </span>                                    &nbsp;&nbsp; </span>
                                     </span>
                                 </li>
                             </ul>
@@ -152,14 +152,6 @@
         </div>
     </section>
 
-    <section class="footer section-wrp">
-        <div class="row-fluid" style="height:250px;background:#fafafa;">
-            <div class="col-md-12">
-
-            </div>
-        </div>
-            
-    </section>
     <!-- End of Main Section -->
 </body>
 <script src="app.js"></script>
