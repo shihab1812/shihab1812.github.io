@@ -1,15 +1,25 @@
+/**
+ * @author Shihab PM ( UI Developer )
+ * this file is intended to write only the business logic for the app ..
+ */
+
+//defining a controller as module for the app ( following layering by feature structure )
 angular.module('timezoneApp.controllers', []);
+
+//attaching the main controller to the controller module 
 angular.module('timezoneApp.controllers').controller('mainController', function ($rootScope, $scope, $interval, $timeout, $filter, $http) {
+
+	// declaring variables ...
 	$scope.hideCurTime = true;
 	$scope.hideIntialTime = false;
-	$scope.countryNameCardHead = "Please select a country";
-	$scope.flag = true;
-	$scope.v_timezone = "UTC+05:30";
-	$scope.cur_flag = "default-flag.png";
-	$scope.cur_flag1 = "default-flag.png";
-	$scope.loaderVisiblity = true;
-	$scope.mainTriggerBtnFlag = "true";
-	$scope.curTime = new Date();
+	$scope.countryNameCardHead = "Please select a country"; // default text on the result card header
+	$scope.searchResBoxFlag = true;
+	$scope.v_timezone = "UTC+05:30"; // setting default time to IST
+	$scope.cur_flag = "default-flag.png"; //setting default flag icon
+	$scope.cur_flag1 = "default-flag.png"; //setting default flag icon
+	$scope.loaderVisiblity = true; //hidding the loader intially 
+	$scope.mainTriggerBtnFlag = "true"; // disabling the CTA button 
+	$scope.curTime = new Date(); //getting the current local machine time
 
 	$scope.continents = [
 		{
@@ -780,38 +790,37 @@ angular.module('timezoneApp.controllers').controller('mainController', function 
 	];
 
 
+	/** @openSelect function 
+	 *  intended to toggle the search result box  
+	 */
+	$scope.openSelect = function (current) { // passing the searchedtext for future manipulation as a parameter
+		$scope.searchText = ""; //setting the searchbox to value NULL
+		$scope.searchResBoxFlag = !$scope.searchResBoxFlag; //toggling the search result box
+	} 
 
-
-
-
-	$scope.openSelect = function (current) {
-		$scope.searchText = "";
-		$scope.flag = !$scope.flag;
-	}
+	
+	/** @selectCountry function 
+	 *  intended to do operation after user selects a country 
+	 */
 	$scope.selectCountry = function (country, state, v_timezone1, cur_flag) {
-		$scope.mainTriggerBtnFlag = false;
-		$scope.searchedCountry = country;
-		$scope.searchedState = state
-		$scope.searchText = $scope.searchedCountry + "-" + $scope.searchedState;
-
-		$scope.flag = true;
-
-
-
-		$scope.v_timezone1 = v_timezone1;
-		$scope.cur_flag = cur_flag;
-
-
-
+		$scope.mainTriggerBtnFlag = false; // enabling the get time button
+		$scope.searchedCountry = country; //extracting the country name
+		$scope.searchedState = state // extracting state name 
+		$scope.searchText = $scope.searchedCountry + "-" + $scope.searchedState; // concating country + state name to append ito input field
+		$scope.searchResBoxFlag = true; // enabling the get time btn
+		$scope.v_timezone1 = v_timezone1; // extarcting the timezone of selected country
+		$scope.cur_flag = cur_flag; // extracting the falg image name
 	}
 
+	/** @selectCountry function 
+	 *  intended to do operation after user triggers get time button
+	 */
 	$scope.triggerSearchBtn = function () {
 
+		$scope.mainTriggerBtnFlag = true; // enabling the get time button
+		$scope.searchResBoxFlag = true; //hiding the serach result box
+		$scope.loaderVisiblity = false; // hiding the loader intially
 
-
-		$scope.mainTriggerBtnFlag = true;
-		$scope.flag = true;
-		$scope.loaderVisiblity = false;
 		$timeout(function () {
 			$scope.loaderVisiblity = "true";
 			$scope.v_timezone = $scope.v_timezone1;

@@ -50,7 +50,7 @@
                         <div class="col-md-11 no-padding">
                             <input type="text" class="form-control search-country" ng-model="searchText" ng-click="openSelect(searchText)" placeholder="Search Any Country">
                             <i class="fa fa-angle-down pos-abs inc-anchor-down" aria-hidden="true"></i>
-                            <ul class="hidden-search-filter list-unstyled" ng-hide="flag">
+                            <ul class="hidden-search-filter list-unstyled" ng-hide="searchResBoxFlag">
                                 <li ng-repeat="continent in continents | filter:searchText">
 
 
