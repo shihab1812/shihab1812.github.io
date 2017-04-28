@@ -34,23 +34,23 @@
     <section class="app-hero-section" ng-class="{'night': ( extractHours >= 18 && extractHours <24 ) || ( extractHours >= 00 && extractHours < 06 ) }">
         <main class="container">
             <header class="pos-rel">
-                <h1 class="text-center">Time Machine of the world</h1>
+                <h1 class="text-center hidden-xs">Time Machine of the world</h1>
                 <h2>
                     <small class="white text-center block">Lorem Awesome text some text missing</small>
                 </h2>
             </header>
 
 
-            <section class="row country-searcher-section">
-                <div class="col-md-offset-2 col-md-6 col-sm-12 col-xs-12 main-search-filter-wrapper pos-rel">
+            <section class="row country-searcher-section mrg-for-row">
+                <div class="col-md-offset-2 col-md-8 main-search-filter-wrapper pos-rel">
                     <div class="row clearfix">
-                        <div class="col-md-1 col-sm-3 col-xs-1 well search-bar-flag-holder text-center">
+                        <div class="col-md-1 col-sm-1 col-xs-2 well search-bar-flag-holder text-center">
                             <img ng-src="img/svgs/flags/{{cur_flag}}" style="width:18px;" alt="">
                         </div>
-                        <div class="col-md-11 col-xs-8 no-padding ">
+                        <div class="col-md-8 col-sm-8 col-xs-10 no-padding ">
                             <input type="text" class="form-control search-country" ng-model="searchText" ng-click="openSelect(searchText)" placeholder="Search Any Country">
                             <i class="fa fa-angle-down pos-abs inc-anchor-down" aria-hidden="true"></i>
-                            <ul class="hidden-search-filter list-unstyled" ng-hide="searchResBoxFlag">
+                            <ul class="hidden-search-filter list-unstyled" ng-hide="searchResBoxFlag" style="position: absolute;z-index: 555;left: 0px;width: 100%;">
                                 <li ng-repeat="continent in continents | filter:searchText">
 
 
@@ -60,14 +60,21 @@
                                 </li>
                             </ul>
                         </div>
+                        <div class="col-xs-12 col-md-3 col-sm-3 trigger-search-btn-wrapper">
+                                   <button class="btn btn-block trigger-search-btn pos-rel" ng-click="triggerSearchBtn()" ng-disabled="mainTriggerBtnFlag">  &nbsp;GET TIME <img src="img/pngs/right-w.png" class="hidden-sm" style="    width: 27px;
+    position: absolute;
+    left: 13%;
+    top: 22%;" alt=""></button>
+                        </div>
+
                     </div>
                 </div>
-                <div class="col-md-2 col-xs-3 trigger-search-btn-wrapper">
+                <!--<div class="col-md-2 trigger-search-btn-wrapper">
                     <button class="btn btn-block trigger-search-btn pos-rel" ng-click="triggerSearchBtn()" ng-disabled="mainTriggerBtnFlag">  &nbsp;GET TIME <img src="img/pngs/right-w.png" style="    width: 27px;
     position: absolute;
     left: 13%;
     top: 22%;" alt=""></button>
-                </div>
+                </div>-->
             </section>
         </main>
     </section>
@@ -76,7 +83,7 @@
     <section class="time-result clearfix">
         <div class="container">
             <div class="row">
-                <div class="col-md-offset-3 col-md-6">
+                <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8  col-xs-12">
                     <div class="card white-theme" ng-class="{'black-theme': ( extractHours >= 18 && extractHours <24 ) || ( extractHours >= 00 && extractHours < 06 ) }">
                         <header>
                             <span><img ng-src="img/svgs/flags/{{cur_flag1}}" alt="" style="width:40px;height: 25px;"></span><span> &nbsp;&nbsp;<strong>{{countryNameCardHead | uppercase}} &nbsp; - &nbsp; </strong>  </span><span>{{stateNameCardhead}}</span>
@@ -87,9 +94,9 @@
                             <span class="pull-right"><img  ng-src="img/pngs/Bright_Moon.png" ng-if="extractHours >= 00 && extractHours < 06" style="height: 22px;" alt=""></span>
                         </header>
                         <ul class="h-m-s-holder list-unstyled list-inline pos-rel" ng-hide="hideIntialTime">
-                            <li class="col-md-4 hour-ticker"><sup> / Hour </sup><span class="time-appender"> - - </span></li>
-                            <li class="col-md-4 min-ticker"><sup> / Min </sup><span class="time-appender"> - - </span></li>
-                            <li class="col-md-4 sec-ticker"><sup> / Sec </sup><span class="time-appender"> - - </span></li>
+                            <li class="col-md-4 col-sm-4 col-xs-4 hour-ticker"><sup> / Hour </sup><span class="time-appender"> -  <span class="hidden-xs">- </span></span></li>
+                            <li class="col-md-4 col-sm-4 col-xs-4 min-ticker"><sup> / Min </sup><span class="time-appender"> -  <span  class="hidden-xs">- </span> </span></li>
+                            <li class="col-md-4 col-sm-4 col-xs-4 sec-ticker"><sup> / Sec </sup><span class="time-appender"> - <span  class="hidden-xs">- </span></span></li>
                             <li class="pos-abs well main-time-change-loader" ng-hide="loaderVisiblity">
                                 <div class="loader">
                                     <svg class="circular" viewBox="25 25 50 50">
@@ -99,9 +106,9 @@
                             </li>
                         </ul>
                         <ul class="h-m-s-holder list-unstyled list-inline pos-rel" ng-hide="hideCurTime">
-                            <li class="col-md-4 hour-ticker"><sup> / Hour </sup><span class="time-appender">{{curTime | date:'HH':v_timezone}} </span></li>
-                            <li class="col-md-4 min-ticker"><sup> / Min </sup><span class="time-appender">{{curTime | date:'m':v_timezone}} </span></li>
-                            <li class="col-md-4 sec-ticker"><sup> / Sec </sup><span class="time-appender">{{curTime | date:'s':v_timezone}} </span></li>
+                            <li class="col-md-4 col-sm-4 col-xs-4 hour-ticker"><sup> / Hour </sup><span class="time-appender">{{curTime | date:'HH':v_timezone}} </span></li>
+                            <li class="col-md-4 col-sm-4 col-xs-4 min-ticker"><sup> / Min </sup><span class="time-appender">{{curTime | date:'m':v_timezone}} </span></li>
+                            <li class="col-md-4 col-sm-4 col-xs-4 sec-ticker"><sup> / Sec </sup><span class="time-appender">{{curTime | date:'s':v_timezone}} </span></li>
                             <li class="pos-abs well main-time-change-loader" ng-hide="loaderVisiblity">
                                 <div class="loader">
                                     <svg class="circular" viewBox="25 25 50 50">

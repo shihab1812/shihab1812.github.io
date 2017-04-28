@@ -26,6 +26,10 @@ body {
     margin-top: 25px;
 }
 
+.mrg-for-row{
+    margin: 0 15px;
+}
+
 .white {
     color: #eee;
 }
@@ -282,7 +286,7 @@ li.brand-img-holder::before {
 }
 
 .app-hero-section {
-    height: 400px;
+    height: 421px;
     /*background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);*/
     background-image: linear-gradient(to right, #6b1111 0%, #ff6f00 100%);
     color: #eee;
@@ -295,8 +299,10 @@ li.brand-img-holder::before {
 }
 
 .app-hero-section.night {
-    height: 400px;
+    height: 421px;
+    
     background: url('../img/jpg/001.jpg') center center repeat-y;
+    background-color: #444;
     background-size: cover;
     position: relative;
     color: #eee;
@@ -441,8 +447,8 @@ section.time-result {
 }
 
 .trigger-search-btn {
-    margin: 24px 0 0px 14px;
-    padding: 17px 0px;
+    margin: 24px 0 0px 0px;
+    padding: 15.8px 0px;
     border-bottom-left-radius: 2px;
     border-radius: 0;
     border-top-right-radius: 4px;
@@ -477,7 +483,9 @@ section.time-result {
 
 .trigger-search-btn-wrapper {
     padding-left: 0px;
+  
 }
+
 
 .time-result .card .h-m-s-holder li {
     background: #fff;
