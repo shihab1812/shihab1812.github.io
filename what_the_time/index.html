@@ -44,10 +44,10 @@
             <section class="row country-searcher-section">
                 <div class="col-md-offset-2 col-md-6 col-sm-12 col-xs-12 main-search-filter-wrapper pos-rel">
                     <div class="row clearfix">
-                        <div class="col-md-1 col-sm-3 col-xs-2 well search-bar-flag-holder text-center">
+                        <div class="col-md-1 col-sm-3 col-xs-1 well search-bar-flag-holder text-center">
                             <img ng-src="img/svgs/flags/{{cur_flag}}" style="width:18px;" alt="">
                         </div>
-                        <div class="col-md-11 no-padding">
+                        <div class="col-md-11 col-xs-8 no-padding ">
                             <input type="text" class="form-control search-country" ng-model="searchText" ng-click="openSelect(searchText)" placeholder="Search Any Country">
                             <i class="fa fa-angle-down pos-abs inc-anchor-down" aria-hidden="true"></i>
                             <ul class="hidden-search-filter list-unstyled" ng-hide="searchResBoxFlag">
@@ -62,7 +62,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 trigger-search-btn-wrapper">
+                <div class="col-md-2 col-xs-3 trigger-search-btn-wrapper">
                     <button class="btn btn-block trigger-search-btn pos-rel" ng-click="triggerSearchBtn()" ng-disabled="mainTriggerBtnFlag">  &nbsp;GET TIME <img src="img/pngs/right-w.png" style="    width: 27px;
     position: absolute;
     left: 13%;
