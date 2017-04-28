@@ -824,8 +824,8 @@ angular.module('timezoneApp.controllers').controller('mainController', function 
 		$timeout(function () {
 			$scope.loaderVisiblity = "true"; //delaying the result by showing a loader
 			$scope.v_timezone = $scope.v_timezone1; //
-			$scope.stateNameCardhead = $scope.searchedState;
-			$scope.countryNameCardHead = $scope.searchedCountry;
+			$scope.stateNameCardhead = $scope.searchedState; //setting card header value
+			$scope.countryNameCardHead = $scope.searchedCountry; //appending searched country name 
 			$scope.extractHours = $filter('date')($scope.curTime, 'HH', $scope.v_timezone);
 			$scope.curTime = new Date();
 			$scope.extractHours = $filter('date')($scope.curTime, 'HH', $scope.v_timezone);
