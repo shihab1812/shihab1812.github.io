@@ -18,13 +18,30 @@
     <!-- Nav bar for the app -->
     <nav class="main-nav clearfix" ng-class="{'night': ( extractHours >= 18 && extractHours <24 ) || ( extractHours >= 00 && extractHours < 06 ) }">
         <div class="container">
-            <header>
+            <header class="hidden-xs">
                 <ul class="links pull-right list-inline">
                     <li class="brand-img-holder"></li>
+                    <li class="">WHAT THE TIME</li>
+                </ul>
+            </header>
+            <header class="visible-xs" style="
+    /* display: block; */
+    width: 100%;
+">
+                <ul class="links pull-right list-inline" style="
+    display: inline-block;
+    float: none !important;
+    width: 100%;
+">
+                    <li class="brand-img-holder" style="
+    /* margin-left: calc(50% - -88px); */
+    /* display: inline-block; */
+    left: 44%;
+"></li>
                     <li class="hidden-xs">WHAT THE TIME</li>
                 </ul>
             </header>
-            <ul class="links pull-right list-inline">
+            <ul class="links pull-right list-inline hidden-xs">
                 <li class="pro-img-holder" style="border-radius: 4px;"></li>
             </ul>
         </div>
