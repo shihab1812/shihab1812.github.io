@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> a simple time app </title>
+    <title> What is the Time | a simple app to display current time in different part of the world </title>
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik|Rubik+Mono+One" rel="stylesheet">
@@ -18,31 +18,20 @@
     <!-- Nav bar for the app -->
     <nav class="main-nav clearfix" ng-class="{'night': ( extractHours >= 18 && extractHours <24 ) || ( extractHours >= 00 && extractHours < 06 ) }">
         <div class="container">
-            <header class="hidden-xs">
+            <header class="hidden-xs non-mob-device">
                 <ul class="links pull-right list-inline">
                     <li class="brand-img-holder"></li>
-                    <li class="">WHAT THE TIME</li>
+                    <li class="">WHAT IS THE TIME</li>
                 </ul>
             </header>
-            <header class="visible-xs" style="
-    /* display: block; */
-    width: 100%;
-">
-                <ul class="links pull-right list-inline" style="
-    display: inline-block;
-    float: none !important;
-    width: 100%;
-">
-                    <li class="brand-img-holder" style="
-    /* margin-left: calc(50% - -88px); */
-    /* display: inline-block; */
-    left: 42%;
-"></li>
-                    <li class="hidden-xs">WHAT THE TIME</li>
+            <header class="visible-xs mob-device">
+                <ul class="links pull-right list-inline">
+                    <li class="brand-img-holder"></li>
+
                 </ul>
             </header>
             <ul class="links pull-right list-inline hidden-xs">
-                <li class="pro-img-holder" style="border-radius: 4px;"></li>
+                <li class="pro-img-holder"></li>
             </ul>
         </div>
     </nav>
@@ -51,9 +40,9 @@
     <section class="app-hero-section" ng-class="{'night': ( extractHours >= 18 && extractHours <24 ) || ( extractHours >= 00 && extractHours < 06 ) }">
         <main class="container">
             <header class="pos-rel">
-                <h1 class="text-center hidden-xs">Time Machine of the world</h1>
+                <h1 class="text-center hidden-xs">WHAT IS THE TIME IN</h1>
                 <h2>
-                    <small class="white text-center block">Lorem Awesome text some text missing</small>
+                    <small class="white text-center block">Please search for a country and click on get time to get started !</small>
                 </h2>
             </header>
 
@@ -62,36 +51,31 @@
                 <div class="col-md-offset-2 col-md-8 main-search-filter-wrapper pos-rel">
                     <div class="row clearfix">
                         <div class="col-md-1 col-sm-1 col-xs-2 well search-bar-flag-holder text-center">
-                            <img ng-src="img/svgs/flags/{{cur_flag}}" style="width:18px;" alt="">
+                            <img ng-src="img/svgs/flags/{{cur_flag}}" alt="default flag image">
                         </div>
                         <div class="col-md-8 col-sm-8 col-xs-10 no-padding ">
                             <input type="text" class="form-control search-country" ng-model="searchText" ng-click="openSelect(searchText)" placeholder="Search Any Country">
                             <i class="fa fa-angle-down pos-abs inc-anchor-down" aria-hidden="true"></i>
-                            <ul class="hidden-search-filter list-unstyled" ng-hide="searchResBoxFlag" style="position: absolute;z-index: 555;left: 0px;width: 100%;">
+                            <ul class="hidden-search-filter list-unstyled" ng-hide="searchResBoxFlag">
                                 <li ng-repeat="continent in continents | filter:searchText">
 
 
                                     <span ng-repeat="country in continent.countries | filter:searchText"> 
-                                 <span ng-repeat="state in country.states" class="block  major-con-state-listing" ng-click="selectCountry(country.nation, state.name , state.tz, country.flag)"><img ng-src="img/svgs/flags/{{country.flag}}" style="width: 25px;" alt="">&nbsp; &nbsp;{{country.nation | uppercase}} &nbsp; <span class="avail-states-appender">-  &nbsp;  {{state.name}} </span>                                    &nbsp;&nbsp; </span>
+                                 <span ng-repeat="state in country.states" class="block  major-con-state-listing" ng-click="selectCountry(country.nation, state.name , state.tz, country.flag)">
+                                     <img class="flag-holder" ng-src="img/svgs/flags/{{country.flag}}"  alt="">
+                                        &nbsp; &nbsp;{{country.nation | uppercase}} &nbsp; <span class="avail-states-appender">-  &nbsp;  {{state.name}} </span>&nbsp;&nbsp;
+                                    </span>
                                     </span>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-xs-12 col-md-3 col-sm-3 trigger-search-btn-wrapper">
-                                   <button class="btn btn-block trigger-search-btn pos-rel" ng-click="triggerSearchBtn()" ng-disabled="mainTriggerBtnFlag">  &nbsp;GET TIME <img src="img/pngs/right-w.png" class="hidden-sm" style="    width: 27px;
-    position: absolute;
-    left: 13%;
-    top: 22%;" alt=""></button>
+                            <button class="btn btn-block trigger-search-btn pos-rel" ng-click="triggerSearchBtn()" ng-disabled="mainTriggerBtnFlag">  &nbsp;GET TIME <img src="img/pngs/right-w.png" class="hidden-sm" alt=""></button>
                         </div>
 
                     </div>
                 </div>
-                <!--<div class="col-md-2 trigger-search-btn-wrapper">
-                    <button class="btn btn-block trigger-search-btn pos-rel" ng-click="triggerSearchBtn()" ng-disabled="mainTriggerBtnFlag">  &nbsp;GET TIME <img src="img/pngs/right-w.png" style="    width: 27px;
-    position: absolute;
-    left: 13%;
-    top: 22%;" alt=""></button>
-                </div>-->
+
             </section>
         </main>
     </section>
@@ -101,19 +85,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8  col-xs-12">
-                    <div class="card white-theme" ng-class="{'black-theme': ( extractHours >= 18 && extractHours <24 ) || ( extractHours >= 00 && extractHours < 06 ) }">
+                    <div class="card display-time-card white-theme" ng-class="{'black-theme': ( extractHours >= 18 && extractHours <24 ) || ( extractHours >= 00 && extractHours < 06 ) }">
                         <header>
-                            <span><img ng-src="img/svgs/flags/{{cur_flag1}}" alt="" style="width:40px;height: 25px;"></span><span> &nbsp;&nbsp;<strong>{{countryNameCardHead | uppercase}} &nbsp; - &nbsp; </strong>  </span><span>{{stateNameCardhead}}</span>
+                            <span><img ng-src="img/svgs/flags/{{cur_flag1}}" class="flag-holder" alt="" ></span><span> &nbsp;&nbsp;<strong>{{countryNameCardHead | uppercase}} &nbsp; - &nbsp; </strong>  </span><span>{{stateNameCardhead}}</span>
                             <!--<h4>{{searchText}} <small> {{state.nation}}</small></h4> -->
-                            <span class="pull-right"><img  ng-src="img/pngs/morning.png" ng-if="extractHours >= 06 && extractHours < 15" style="height: 22px;" alt=""></span>
-                            <span class="pull-right"><img  ng-src="img/pngs/evening.png" ng-if="extractHours >= 15 && extractHours < 18" style="height: 22px;" alt=""></span>
-                            <span class="pull-right"><img  ng-src="img/pngs/Bright_Moon.png" ng-if="extractHours >= 18 && extractHours < 24" style="height: 22px;" alt=""></span>
-                            <span class="pull-right"><img  ng-src="img/pngs/Bright_Moon.png" ng-if="extractHours >= 00 && extractHours < 06" style="height: 22px;" alt=""></span>
+                            <span class="pull-right"><img  ng-src="img/pngs/morning.png" class="day-status" ng-if="extractHours >= 06 && extractHours < 15"  alt=""></span>
+                            <span class="pull-right"><img  ng-src="img/pngs/evening.png" class="day-status" ng-if="extractHours >= 15 && extractHours < 18"  alt=""></span>
+                            <span class="pull-right"><img  ng-src="img/pngs/Bright_Moon.png" class="day-status" ng-if="extractHours >= 18 && extractHours < 24"  alt=""></span>
+                            <span class="pull-right"><img  ng-src="img/pngs/Bright_Moon.png" class="day-status" ng-if="extractHours >= 00 && extractHours < 06" alt=""></span>
                         </header>
                         <ul class="h-m-s-holder list-unstyled list-inline pos-rel" ng-hide="hideIntialTime">
-                            <li class="col-md-4 col-sm-4 col-xs-4 hour-ticker"><sup> / Hour </sup><span class="time-appender"> -  <span class="hidden-xs">- </span></span></li>
-                            <li class="col-md-4 col-sm-4 col-xs-4 min-ticker"><sup> / Min </sup><span class="time-appender"> -  <span  class="hidden-xs">- </span> </span></li>
-                            <li class="col-md-4 col-sm-4 col-xs-4 sec-ticker"><sup> / Sec </sup><span class="time-appender"> - <span  class="hidden-xs">- </span></span></li>
+                            <li class="col-md-4 col-sm-4 col-xs-4 hour-ticker"><sup> / Hour </sup><span class="time-appender"> -  <span class="hidden-xs">- </span></span>
+                            </li>
+                            <li class="col-md-4 col-sm-4 col-xs-4 min-ticker"><sup> / Min </sup><span class="time-appender"> -  <span  class="hidden-xs">- </span> </span>
+                            </li>
+                            <li class="col-md-4 col-sm-4 col-xs-4 sec-ticker"><sup> / Sec </sup><span class="time-appender"> - <span  class="hidden-xs">- </span></span>
+                            </li>
                             <li class="pos-abs well main-time-change-loader" ng-hide="loaderVisiblity">
                                 <div class="loader">
                                     <svg class="circular" viewBox="25 25 50 50">
@@ -144,11 +131,11 @@
         <div class="well about-card">
             <article class="my-info text-center">
                 <header class="">
-                    <small class="text-muted">Made with <span><img src="img/pngs/heart.png" style="width:15px;" alt=""></span> by </small>
+                    <small class="text-muted">Made with <span><img src="img/pngs/heart.png" class="heart-img" alt=""></span> by </small>
                 </header>
                 <main>
                     <figure>
-                        <img src="img/jpg/profile/shihab.jpg" class="img-circle" style="width: 75px" alt="">
+                        <img src="img/jpg/profile/shihab.jpg" class="img-circle my-pic" alt="">
                     </figure>
                     <p class="lead font-bold mrg-b-2">SHIHAB P M</p>
                     <p class="small"> UX / UI Developer @ Nanobi Data and Analytics</p>
@@ -167,7 +154,7 @@
                         json format file 
                     </small>
                     <p class="text-center mrg-t-25">
-                        <button class="btn btn-default github-traveller">  <img src="img/pngs/right.png" style="width:30px" alt="">   </button>
+                        <button class="btn btn-default github-traveller">  <img src="img/pngs/right.png" alt="">   </button>
                     </p>
                 </main>
 
@@ -176,7 +163,7 @@
         </div>
     </section>
 
-<!-- End of Main Section -->
+    <!-- End of Main Section -->
 </body>
 <script src="app.js"></script>
 <script src="js/controllers.js"></script>

@@ -26,7 +26,7 @@ body {
     margin-top: 25px;
 }
 
-.mrg-for-row{
+.mrg-for-row {
     margin: 0 15px;
 }
 
@@ -197,6 +197,9 @@ body {
 
 /* End of Loader Code */
 
+
+/* header navigation Code */
+
 .main-nav {
     padding: 4px 30px;
     /*background: #3b5de9;*/
@@ -222,6 +225,20 @@ body {
 .main-nav .links {
     position: relative;
     top: 6px;
+}
+
+header.mob-device {
+    width: 100%;
+}
+
+header.mob-device ul {
+    display: inline-block;
+    float: none !important;
+    width: 100%;
+}
+
+header.mob-device ul li {
+    left: 42%;
 }
 
 li.brand-img-holder {
@@ -267,7 +284,7 @@ li.brand-img-holder::before {
     width: 50px;
     background: #4cd37f;
     height: 50px;
-    border-radius: 50%;
+    border-radius: 4px;
     top: 0px;
     background: url("../img/jpg/profile/shihab.jpg") center center no-repeat;
     background-size: cover;
@@ -285,6 +302,12 @@ li.brand-img-holder::before {
     opacity: 0.3;
 }
 
+
+/* end of  header navigation Code */
+
+
+/* App Hero Section*/
+
 .app-hero-section {
     height: 421px;
     /*background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);*/
@@ -300,7 +323,6 @@ li.brand-img-holder::before {
 
 .app-hero-section.night {
     height: 421px;
-    
     background: url('../img/jpg/001.jpg') center center repeat-y;
     background-color: #444;
     background-size: cover;
@@ -354,6 +376,10 @@ li.brand-img-holder::before {
     border-top-right-radius: 0;
 }
 
+.search-bar-flag-holder img {
+    width: 18px;
+}
+
 .avail-states-appender {
     font-size: 12px;
 }
@@ -377,7 +403,7 @@ li.brand-img-holder::before {
     top: 25px;
 }
 
-ul.hidden-search-filter {
+.hidden-search-filter {
     background: #eee;
     border-radius: 2px;
     color: #444;
@@ -388,19 +414,27 @@ ul.hidden-search-filter {
     max-height: 300px;
     box-shadow: 0 7px 10px #ababab;
     overflow-y: auto;
+    position: absolute;
+    z-index: 555;
+    left: 0px;
+    width: 100%;
 }
 
-ul.hidden-search-filter li {
+.hidden-search-filter li {
     cursor: pointer;
 }
 
-.major-con-state-listing {
+.hidden-search-filter .major-con-state-listing img.flag-holder {
+    width: 25px;
+}
+
+.hidden-search-filter .major-con-state-listing {
     padding: 7px 15px;
     border-bottom: 1px solid #eee;
     background: #fafafa;
 }
 
-ul.hidden-search-filter .major-con-state-listing:hover {
+.hidden-search-filter .major-con-state-listing:hover {
     background: #ccc;
     opacity: 0.6;
 }
@@ -481,11 +515,25 @@ section.time-result {
     border: 1px solid #3025ac;
 }
 
-.trigger-search-btn-wrapper {
-    padding-left: 0px;
-  
+.trigger-search-btn img {
+    width: 27px;
+    position: absolute;
+    right: 8%;
+    top: 22%;
 }
 
+.trigger-search-btn-wrapper {
+    padding-left: 0px;
+}
+
+.display-time-card header img.flag-holder {
+    width: 40px;
+    height: 25px;
+}
+
+.display-time-card header .day-status {
+    height: 22px;
+}
 
 .time-result .card .h-m-s-holder li {
     background: #fff;
@@ -531,6 +579,9 @@ section.time-result {
     text-align: center;
 }
 
+
+/*end of  App Hero Section*/
+
 .floating-profile-wrp {
     position: fixed;
     width: 280px;
@@ -554,6 +605,14 @@ section.time-result {
     transition: 1s cubic-bezier(0.35, 1.69, 0.35, 0.81);
     left: calc(50% - 160px);
     position: relative;
+}
+
+.about-card img.heart-img {
+    width: 15px;
+}
+
+.about-card img.my-pic {
+    width: 75px;
 }
 
 .my-info header {
@@ -616,4 +675,8 @@ section.time-result {
 .github-traveller:hover {
     padding: 0px 23px 0 30px;
     transition: padding 0.2s ease-in;
+}
+
+.github-traveller img {
+    width: 30px;
 }
