@@ -1,0 +1,12 @@
+{
+  "name": "shihab1812.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/shihab1812/shihab1812.github.io.git",
+  "author": "shihab <shihabudheen.pm@nanobianalytics.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "gulp": "^3.9.1"
+  }
+}
