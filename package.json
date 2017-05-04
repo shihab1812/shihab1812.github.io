@@ -6,7 +6,6 @@
   "author": "shihab <shihabudheen.pm@nanobianalytics.com>",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^3.3.7",
-    "gulp": "^3.9.1"
+    "bootstrap": "^3.3.7"
   }
 }
