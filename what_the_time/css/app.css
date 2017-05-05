@@ -601,7 +601,6 @@ section.time-result {
     margin-top: 50px;
     width: 320px;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
-    -webkit-transition: 1s cubic-bezier(0.35, 1.69, 0.35, 0.81);
     transition: 1s cubic-bezier(0.35, 1.69, 0.35, 0.81);
     left: calc(50% - 160px);
     position: relative;
