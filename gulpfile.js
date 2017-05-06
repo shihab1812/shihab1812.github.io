@@ -67,7 +67,8 @@ gulp.task('lint', function () {
 
 
 gulp.task('watch', function () {
-    gulp.watch('folio_assets/sass/bundle.scss', ['build-buffer-css', 'cssPrefixer']);
+    gulp.watch('folio_assets/sass/**/*.scss', ['build-buffer-css']);
+    gulp.watch('folio_assets/sass/buffer/bundle.css',['cssPrefixer']);
     gulp.watch('folio_assets/js/src/**', ['lint']);
     gulp.watch('folio_assets/images', ['minifyImages']);
 });
@@ -91,7 +92,7 @@ gulp.task('default', ['webserver', 'build-buffer-css', 'cssPrefixer', 'minifyIma
 
 // Run this task when ever new library is added
 gulp.task('copyLibs', function () {
-    var folders = ["bootstrap", "jquery", "tippy.js"];
+    var folders = ["bootstrap", "jquery", "tippy.js", "angular", "spinthatshit"];
     // copy any html files in source/ to public/
     folders.forEach((folder) => {
         gulp.src('node_modules/' + folder + '/**').pipe(gulp.dest('folio_assets/libs/' + folder));
