@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <style id="bx-google-fonts">@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,500,700,900,100italic,300italic,400,400italic,500italic,700italic,900italic);</style>
-  </defs>
-  <rect x="119.558" y="38.665" width="160.55" height="202.263" style="fill: rgb(255, 255, 255); stroke: rgb(116, 117, 116);"/>
-  <text x="134.311" y="91.125" style="font-size: 30.7px; font-family: Roboto; white-space: pre;" transform="matrix(1.000001, 0, 0, 1, 26.565384, 11.858856)">S</text>
-  <text x="134.311" y="91.125" style="font-size: 30.7px; font-family: Roboto; white-space: pre;" transform="matrix(1.000001, 0, 0, 1, 80.999931, 11.325185)">H</text>
-  <text x="134.311" y="91.125" style="font-size: 30.7px; font-family: Roboto; white-space: pre;" transform="matrix(1.000001, 0, 0, 1, 29.767418, 61.490356)">I</text>
-  <text x="134.311" y="91.125" style="font-size: 30.7px; font-family: Roboto; white-space: pre;" transform="matrix(1.000001, 0, 0, 1, 80.466263, 60.423012)">H</text>
-  <text x="157.141" y="204.639" style="font-size: 36; font-family: Roboto; white-space: pre;">A</text>
-  <text x="215.311" y="204.105" style="font-size: 36; font-family: Roboto; white-space: pre;">B</text>
-</svg>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><defs><style id="bx-google-fonts">@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);</style></defs><path fill="#353232" stroke="#494c49" d="M113.516 62.681h198.253v258.831H113.516z"/><text x="151.804" y="133.126" fill="#fff" font-size="36" font-weight="900" white-space="pre" font-family="Roboto">S</text><text x="243.595" y="132.058" fill="#fff" font-size="36" font-weight="900" white-space="pre" font-family="Roboto">H</text><text x="158.741" y="202.504" fill="#f9f9f9" font-size="36" font-weight="900" white-space="pre" font-family="Roboto">I</text><text x="241.994" y="196.099" transform="translate(1.067 6.938)" fill="#fff" font-size="36" font-weight="900" white-space="pre" font-family="Roboto">H</text><text x="241.994" y="196.099" transform="translate(-90.724 76.315)" fill="#fff" font-size="36" font-weight="900" white-space="pre" font-family="Roboto">A</text><text x="241.994" y="196.099" transform="translate(2.669 75.781)" fill="#fff" font-size="36" font-weight="900" white-space="pre" font-family="Roboto">B</text></svg>
