@@ -5,10 +5,12 @@
     <link rel="icon" href="folio_assets/images/branding/temp.png" type="image/gif">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shihab.me | a frank portfolio</title>
-    <link rel="stylesheet" href="folio_assets/libs/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Importing fonts -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="folio_assets/libs/vendorBundle.css">
+    <!-- Application Specific CSS --> 
     <link rel="stylesheet" href="folio_assets/css/bundle.css">
 </head>
 <body>
@@ -16,7 +18,10 @@
         <nav class="row">
             <ul class="list-inline list-unstyled pull-left">
                 <li class="logo-box">
-                    <img class="logo" src="folio_assets/images/branding/logo.svg" alt="">
+                    <img class="logo" src="folio_assets/images/branding/logo-sample.svg" alt="">
+                </li>
+                <li>
+                    <button class="btn btn-primary  tippy" title="I'm a tooltip!">Hello tooltip</button>
                 </li>
             </ul>
         </nav>
@@ -25,6 +30,16 @@
     <h1>
        
     </h1>
-    <scripts src="folio_assets/libs/jquery/dist/jquery.min.js">   </scripts>
+    <script src="folio_assets/libs/vendorBundle.js"></script>
+    <script>
+    new Tippy('.tippy',{
+    position: 'right',
+    animation: 'fade',
+    duration: 300,
+    arrow: true,
+    animateFill: true,
+    size: 'big'
+});
+    </script>
 </body>
 </html>

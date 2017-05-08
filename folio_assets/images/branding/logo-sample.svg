@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <style id="bx-google-fonts">@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);</style>
-  </defs>
-  <rect style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0);" x="113.516" y="62.681" width="198.253" height="258.831"/>
-  <text x="151.804" y="133.126" style="fill: rgb(123, 114, 114); font-size: 36px; font-weight: bold; white-space: pre;">S</text>
-  <text x="243.595" y="132.058" style="fill: rgb(90, 86, 86); font-size: 36px; font-weight: bold; white-space: pre;">H</text>
-  <text x="157.902" y="207.988" style="fill: rgb(90, 86, 86); font-size: 41.8px; font-weight: bold; white-space: pre;">I</text>
-  <text x="241.994" y="196.099" transform="matrix(0.999999, 0, 0, 1, 0.533823, 7.471404)" style="fill: rgb(123, 114, 114); font-size: 36px; font-weight: bold; white-space: pre;">H</text>
-  <text x="241.994" y="196.099" transform="matrix(0.999999, 0, 0, 1, -90.724091, 76.315094)" style="fill: rgb(123, 114, 114); font-size: 36px; font-weight: bold; white-space: pre;">A</text>
-  <text x="241.994" y="196.099" transform="matrix(1.037043, 0, 0, 1.037044, -7.788422, 70.849304)" style="fill: rgb(90, 86, 86); font-size: 36px; font-weight: bold; white-space: pre;">B</text>
-</svg>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><defs><style id="bx-google-fonts">@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);</style></defs><path fill="#fff" stroke="#000" d="M113.516 62.681h198.253v258.831H113.516z"/><text x="151.804" y="133.126" fill="#7b7272" font-size="36" font-weight="700" white-space="pre">S</text><text x="243.595" y="132.058" fill="#5a5656" font-size="36" font-weight="700" white-space="pre">H</text><text x="157.902" y="207.988" fill="#5a5656" font-size="41.8" font-weight="700" white-space="pre">I</text><text x="241.994" y="196.099" transform="translate(.534 7.471)" fill="#7b7272" font-size="36" font-weight="700" white-space="pre">H</text><text x="241.994" y="196.099" transform="translate(-90.724 76.315)" fill="#7b7272" font-size="36" font-weight="700" white-space="pre">A</text><text x="241.994" y="196.099" transform="translate(-7.788 70.85) scale(1.03704)" fill="#5a5656" font-size="36" font-weight="700" white-space="pre">B</text></svg>
