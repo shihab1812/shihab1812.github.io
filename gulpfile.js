@@ -14,6 +14,9 @@ const gulp = require('gulp'), //importing GULP module
       imagemin = require('gulp-imagemin'), // Image Minification
       jshint = require('gulp-jshint'), // A module that logs the missing javascript best practices and gives hint for the cause of error 
       concat = require('gulp-concat'), // A module to concat JS files 
+      uglify = require('gulp-uglify'), // A module to minify js file
+      pump = require('pump'), // A module to handle errors
+       sourcemaps = require('gulp-sourcemaps'),
       concatCss = require('gulp-concat-css'); // A module to concat CSS file 
 
 
@@ -56,12 +59,21 @@ const gulp = require('gulp'), //importing GULP module
                 .pipe(gulp.dest('folio_assets/images/'))
         });
 
-        //JS Hinting
-        gulp.task('lint', function () {
-            return gulp.src('folio_assets/js/src/**')
-                .pipe(jshint())
-                .pipe(jshint.reporter('default'));
-        });
+ 
+     
+        //Build dev JS
+        gulp.task('build-js', function() {
+        return gulp.src('folio_assets/js/src/*.js')
+        .pipe(sourcemaps.init())
+         .pipe(jshint())  //JS Hinting
+        .pipe(jshint.reporter('default'))
+        .pipe(concat('main.min.js'))
+        .pipe(uglify())
+        //only uglify if gulp is ran with '--type production'
+        //.pipe(gutil.env.type === 'production' ? uglify() : gutil.noop()) 
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('folio_assets/js/'));
+});
 
 // ==========================================================================
     /**
@@ -74,8 +86,9 @@ const gulp = require('gulp'), //importing GULP module
         gulp.task('watch', function () {
             gulp.watch('folio_assets/sass/**/*.scss', ['build-buffer-css']);
             gulp.watch('folio_assets/sass/buffer/bundle.css',['cssPrefixer']);
-            gulp.watch('folio_assets/js/src/**', ['lint']);
+            gulp.watch('folio_assets/js/src/**', ['build-js']);
             gulp.watch('folio_assets/images', ['minifyImages']);
+
         
         });
 
@@ -87,7 +100,7 @@ const gulp = require('gulp'), //importing GULP module
 // ==========================================================================
 
         // create a default task and just log a message
-        gulp.task('default', ['webserver', 'cssPrefixer', 'minifyImages', 'lint','concat_all_Lib_Js', 'watch']);
+        gulp.task('default', ['webserver', 'cssPrefixer', 'minifyImages','concat_all_Lib_Js', 'watch']);
 
 
 
