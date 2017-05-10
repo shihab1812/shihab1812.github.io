@@ -2,3 +2,17 @@
     font-size: 40px;
     line-height: 1.4;
 }
+
+.vertical-text {
+	transform: rotate(90deg);
+	transform-origin: left top 0;
+    float: left;
+    position: absolute;
+}
+
+.vertical-text-right{
+    transform: rotate(90deg);
+	transform-origin: left top 0;
+    float: right;
+    position: absolute;
+}
