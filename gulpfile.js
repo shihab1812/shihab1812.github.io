@@ -16,7 +16,7 @@ const gulp = require('gulp'), //importing GULP module
       concat = require('gulp-concat'), // A module to concat JS files 
       uglify = require('gulp-uglify'), // A module to minify js file
       pump = require('pump'), // A module to handle errors
-       sourcemaps = require('gulp-sourcemaps'),
+      sourcemaps = require('gulp-sourcemaps'),// write sourcemaps for JS and CSS min files 
       concatCss = require('gulp-concat-css'); // A module to concat CSS file 
 
 
@@ -59,8 +59,6 @@ const gulp = require('gulp'), //importing GULP module
                 .pipe(gulp.dest('folio_assets/images/'))
         });
 
- 
-     
         //Build dev JS
         gulp.task('build-js', function() {
         return gulp.src('folio_assets/js/src/*.js')
@@ -75,14 +73,14 @@ const gulp = require('gulp'), //importing GULP module
         .pipe(gulp.dest('folio_assets/js/'));
 });
 
+
 // ==========================================================================
     /**
      * Watchable Tasks 
      */
  // ==========================================================================
 
-
-        // bundle all task that goes into watch 
+     // bundle all task that goes into watch 
         gulp.task('watch', function () {
             gulp.watch('folio_assets/sass/**/*.scss', ['build-buffer-css']);
             gulp.watch('folio_assets/sass/buffer/bundle.css',['cssPrefixer']);
@@ -113,7 +111,7 @@ const gulp = require('gulp'), //importing GULP module
 
         //Vendor Js concat and uglify task ... run this task when ever new library is added to node_modules that is not a dev-dependency
         gulp.task('concat_all_Lib_Js',function(){
-            var libs=['node_modules/jquery/dist/jquery.min.js','shihab1812.github.io/node_modules/bootstrap/dist/js/bootstrap.min.js','node_modules/tippy.js/dist/tippy.min.js','node_modules/jquery.easing/jquery.easing.min.js'];
+            var libs=['node_modules/jquery/dist/jquery.min.js','shihab1812.github.io/node_modules/bootstrap/dist/js/bootstrap.min.js','node_modules/tippy.js/dist/tippy.min.js','node_modules/jquery.easing/jquery.easing.min.js','node_modules/instafeed.js/instafeed.min.js'];
             return gulp.src(libs)
             .pipe(concat('vendorBundle.js'))
             .pipe(gulp.dest('./folio_assets/libs/'));

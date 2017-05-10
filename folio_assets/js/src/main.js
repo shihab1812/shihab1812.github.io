@@ -38,3 +38,23 @@
                 animateFill: true,
                 size: 'big'
             });
+
+
+// ====================================================================
+    // API realted Javascript
+//  ===================================================================
+
+
+
+     $.get( "./folio_assets/json/instapost.json", function( data ) {
+         
+          
+            var posts = data.items;
+            var postCounter = 0;
+            for(var i=0;i<5;i++){
+                console.log(posts[i].images.standard_resolution.url);
+            }
+   
+
+
+});

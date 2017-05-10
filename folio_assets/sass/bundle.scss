@@ -2,7 +2,10 @@
 @import "helpers/variables.scss";
 @import "base/typography.scss";
 @import "base/reset.scss";
-
+@import "base/grids.scss";
 @import "vendors/loader.scss";
-
 @import "layouts/header.scss";
+@import"pages/landing_page.scss";
+@import"helpers/typography.scss";
+@import"helpers/bs-override.scss";
+@import"helpers/colors.scss";
