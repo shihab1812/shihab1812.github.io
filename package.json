@@ -7,11 +7,13 @@
   "license": "MIT",
   "dependencies": {
     "angular": "^1.6.4",
+    "animate.css": "^3.5.2",
     "bootstrap": "^3.3.7",
     "git": "^0.1.5",
     "instafeed.js": "^1.4.1",
     "jquery": "^3.2.1",
     "jquery.easing": "https://github.com/gdsmith/jquery.easing.git",
+    "scrollreveal": "^3.3.5",
     "tippy.js": "^0.11.2"
   },
   "devDependencies": {

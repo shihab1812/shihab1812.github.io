@@ -7,6 +7,10 @@
 // ====================================================================
     // Design Realted Javascript
 //  ====================================================================
+            // JavaScript
+            window.sr = ScrollReveal();
+            sr.reveal('#intro',{ duration: 2000 });
+            sr.reveal('#my-work',{ duration: 3000 });
 
             // jQuery to collapse the navbar on scroll
             $(window).scroll(function() {

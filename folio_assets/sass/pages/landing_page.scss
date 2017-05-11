@@ -11,10 +11,11 @@ section#intro {
 }
 
 .vertical-text.about-text {
-    top: 50%;
+    top: 53%;
     letter-spacing: 4px;
     font-size: 16px;
     font-weight: bold;
+    left: 40px;
     
 }
 
@@ -61,3 +62,12 @@ section#intro {
 .work-card .projects-desc{
     margin: 50px auto 50px auto;
 }
+
+section#intro .push-text{
+    margin-left: 15px;
+}
+
+.work-card .tags-wrapper{
+    margin: 25px 0px;
+}
+
