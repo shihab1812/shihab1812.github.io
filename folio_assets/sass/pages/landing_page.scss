@@ -49,6 +49,9 @@ section#intro {
     right: 200px;
 }
 
+.work-card{
+    margin: 75px 0;
+}
 .hero-img .funky-over-font{
     width: 120px;
     top: 40%;
@@ -57,6 +60,16 @@ section#intro {
     letter-spacing: 11px;
     line-height: 2;
     color: #847f7f;
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .work-card .project-hero-img img{
+      height: 300px !important;
+  }
 }
 
 .work-card .projects-desc{
