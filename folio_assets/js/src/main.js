@@ -3,10 +3,33 @@
  *  Loading the main app module with the dependent modules 
  */
 
+// ====================================================================
+    // User Experience related JavaScript
+//  ====================================================================
+
+            //checking wether the user is using IE 
+            function msieversion() {
+
+                var ua = window.navigator.userAgent;
+                var msie = ua.indexOf("MSIE ");
+
+                if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, return version number
+                {
+                // pop up a modal box saying for better experience I recommend to use chrome or firefox or safari
+                }
+            
+
+                return false;
+            }
+
+// msieversion(); // for the moment commented this code lot to work on this at last
+
+
 
 // ====================================================================
     // Design Realted Javascript
 //  ====================================================================
+
             // JavaScript
             window.sr = ScrollReveal();
             sr.reveal('#intro',{ duration: 2000 });
