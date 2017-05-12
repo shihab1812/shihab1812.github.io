@@ -264,7 +264,7 @@ section#intro .push-text {
           transform-origin: left top 0;
   float: right;
   position: absolute;
-  right: -14%;
+  right: -235px;
   top: 48%;
   font-size: 17px;
   letter-spacing: 9px; }
@@ -272,12 +272,21 @@ section#intro .push-text {
 .no-text-push {
   margin-left: 0px; }
 
+.text-slant {
+  font-style: italic; }
+
+.hero-font {
+  font-family: "Playfair Display", serif; }
+
+.sub-font {
+  font-family: "Karla", sans-serif; }
+
 .well-white {
   background: #fff;
   border: 0px; }
 
 .cust-conatainer-fluid {
-  padding: 120px; }
+  padding: 0 120px; }
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {

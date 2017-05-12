@@ -15,8 +15,7 @@
 	transform-origin: left top 0;
     float: right;
     position: absolute;
- 
-    right: -14%;
+    right: -235px;
     top: 48%;
     font-size: 17px;
     letter-spacing: 9px;
@@ -24,4 +23,16 @@
 
 .no-text-push{
     margin-left: 0px;
+}
+
+.text-slant{
+    font-style: italic;
+}
+
+.hero-font{
+    font-family: $primary-font;
+}
+
+.sub-font{
+     font-family: $supporting-font;
 }
