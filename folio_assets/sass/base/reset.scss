@@ -16,3 +16,17 @@ body {
     
 }
 
+.insta-post-appender{
+    padding: 10px 15px;
+    margin: 10px 0;
+
+}
+
+.insta-post-appender>img{
+        margin: 4px 6px;
+}
+
+.insta-post-appender>img::after{
+    background: #444;
+    opacity: 0.35;
+}

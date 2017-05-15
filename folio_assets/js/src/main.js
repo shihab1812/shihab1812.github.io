@@ -6,6 +6,8 @@
 // ====================================================================
     // User Experience related JavaScript
 //  ====================================================================
+            //Decalare vars
+     
 
             //checking wether the user is using IE 
             function msieversion() {
@@ -71,17 +73,38 @@
     // API realted Javascript
 //  ===================================================================
 
+    // on success of instapost API
+    function gridLayouter(posts){
+       console.log(posts);
+        var counter = 1;
+        for(var i=0;i<posts.length;i++){
+
+            //console.log( $('#instagrid'+counter));
+            $('#instagrid'+counter+'>.insta-post-appender').append('<img src="'+posts[i]+'">');
+            console.log("hi");
+            counter++;
+            if(counter==4){
+                counter = 1;
+            }
+
+
+       
+        }
+    
+    }
 
 
      $.get( "./folio_assets/json/instapost.json", function( data ) {
          
-          
+                 var postCollector = [];
             var posts = data.items;
             var postCounter = 0;
-            for(var i=0;i<5;i++){
-                console.log(posts[i].images.standard_resolution.url);
-            }
-   
+            for(var i=0;i<9;i++){
+                postCollector.push(posts[i].images.low_resolution.url);
+               }
+           
+             // callback function
+             gridLayouter(postCollector);
 
 
 });

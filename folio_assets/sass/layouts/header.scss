@@ -14,7 +14,8 @@
 
     .top-nav-collapse {
         padding: 5px;
-        background-color: rgba(249,249,249,0.98);
-        box-shadow: rgba(0, 0, 0, 0.04) 0px 13px 18px 0px;
+        background: rgba(249,249,249,0.98) !important;
+        box-shadow: 0 13px 18px 0 rgba(0,0,0,.04);
+
     }
 }

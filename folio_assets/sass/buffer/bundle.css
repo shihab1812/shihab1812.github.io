@@ -20,6 +20,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.insta-post-appender {
+  padding: 10px 15px;
+  margin: 10px 0; }
+
+.insta-post-appender > img {
+  margin: 4px 6px; }
+
+.insta-post-appender > img::after {
+  background: #444;
+  opacity: 0.35; }
+
 .cust_container_fluid {
   padding: 0 100px; }
 
@@ -40,7 +51,8 @@ of those sections to manage the look and feel of the site. */
   text-align: center; }
 
 section#my-work {
-  height: 100%; }
+  margin-bottom: 100px;
+  height: auto !important; }
 
 .about-section {
   height: 100%;
@@ -56,6 +68,10 @@ section#my-work {
   height: 100%;
   padding-top: 150px;
   text-align: center; }
+
+.clear-float {
+  float: left;
+  width: 100%; }
 
 /* Loader Code */
 .main-time-change-loader {
@@ -175,8 +191,8 @@ section#my-work {
     border-bottom: 0px; }
   .top-nav-collapse {
     padding: 5px;
-    background-color: rgba(249, 249, 249, 0.98);
-    box-shadow: rgba(0, 0, 0, 0.04) 0px 13px 18px 0px; } }
+    background: rgba(249, 249, 249, 0.98) !important;
+    box-shadow: 0 13px 18px 0 rgba(0, 0, 0, 0.04); } }
 
 section#intro {
   margin-top: 85px; }
