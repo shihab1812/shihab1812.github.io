@@ -30,6 +30,7 @@ of those sections to manage the look and feel of the site. */
 
 section#my-work{
     height: 100%;
+    margin-bottom: 100px;
 }
 
 .about-section {
@@ -52,3 +53,9 @@ section#my-work{
     text-align: center;
   
 } 
+
+.clear-float{
+    float: left;
+    width: 100%;
+ 
+}

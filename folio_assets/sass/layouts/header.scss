@@ -9,9 +9,12 @@
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
+        border-bottom: 0px;
     }
 
     .top-nav-collapse {
         padding: 5px;
+        background: rgba(249,249,249,0.98) !important;
+        box-shadow: 0 13px 18px 0 rgba(0,0,0,.04);
     }
 }
