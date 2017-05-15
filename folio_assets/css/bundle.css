@@ -44,8 +44,8 @@ of those sections to manage the look and feel of the site. */
   text-align: center; }
 
 section#my-work {
-  height: 100%;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  height: auto !important; }
 
 .about-section {
   height: 100%;
