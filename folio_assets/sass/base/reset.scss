@@ -22,3 +22,11 @@ body {
 
 }
 
+.insta-post-appender>img{
+        margin: 4px 6px;
+}
+
+.insta-post-appender>img::after{
+    background: #444;
+    opacity: 0.35;
+}
