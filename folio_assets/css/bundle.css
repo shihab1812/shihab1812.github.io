@@ -27,10 +27,6 @@ body {
 .insta-post-appender > img {
   margin: 4px 6px; }
 
-.insta-post-appender > img::after {
-  background: #444;
-  opacity: 0.35; }
-
 .cust_container_fluid {
   padding: 0 100px; }
 
@@ -72,6 +68,18 @@ section#my-work {
 .clear-float {
   float: left;
   width: 100%; }
+
+section#medium_blog .logo-wrapper {
+  background-color: rgba(249, 249, 249, 0.98) !important;
+  box-shadow: 0 13px 18px 0 rgba(0, 0, 0, 0.04); }
+
+section#my-work .project-hero-img:before {
+  content: '';
+  background: #000000;
+  position: absolute;
+  width: 98%;
+  height: 100%;
+  opacity: 0.45; }
 
 /* Loader Code */
 .main-time-change-loader {

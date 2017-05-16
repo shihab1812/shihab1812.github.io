@@ -60,3 +60,17 @@ section#my-work{
     width: 100%;
  
 }
+
+section#medium_blog .logo-wrapper{
+    background-color:rgba(249, 249, 249, 0.98) !important;
+    box-shadow:0 13px 18px 0 rgba(0, 0, 0, 0.04);
+}
+
+section#my-work .project-hero-img:before {
+    content: '';
+    background: #000000;
+    position: absolute;
+    width: 98%;
+    height: 100%;
+    opacity: 0.45;
+}
