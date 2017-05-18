@@ -31,7 +31,7 @@ const gulp = require('gulp'), //importing GULP module
             gulp.src('./')
                 .pipe(webserver({
                     port: 8056,
-                    livereload: true,
+                    livereload: false,
                     directoryListing: false,
                     open: true
                 }));
