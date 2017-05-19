@@ -23,7 +23,7 @@ body {
 .section-head:after {
   position: absolute;
   bottom: 0;
-  width: 50px;
+  width: 40px;
   height: 5px;
   background: #444;
   content: '';
@@ -43,11 +43,21 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 .insta-post-appender {
-  padding: 10px 15px;
-  margin: 10px 0; }
+  margin: 0 3px; }
 
 .insta-post-appender > img {
-  margin: 4px 6px; }
+  padding: 3px;
+  width: 101%;
+  box-shadow: 0 13px 18px 0 rgba(0, 0, 0, 0.04); }
+
+.insta-post-appender::before {
+  position: absolute;
+  width: 100%;
+  content: '';
+  height: 100%;
+  top: 0px;
+  background: #000;
+  opacity: 0.3; }
 
 .cust_container_fluid {
   padding: 0 100px; }
@@ -358,6 +368,12 @@ section#intro .push-text {
 
 .display-block {
   display: block; }
+
+.minimal-padding {
+  padding: 3px; }
+
+.no-padding {
+  padding: 0px; }
 
 .tag {
   font-weight: 100;
