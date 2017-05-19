@@ -2,7 +2,7 @@
     padding: 0 $cust_container_fluid_p;
 }
 .inner-container{
-    padding: $inner_container_p;
+    padding: 55px $inner_container_p;
 }
 
 /* Portrait and Landscape */
@@ -30,7 +30,7 @@ of those sections to manage the look and feel of the site. */
 
 section#my-work{
 
-    margin-bottom: 100px;
+   
     height: auto !important;
 }
 
@@ -66,11 +66,11 @@ section#medium_blog .logo-wrapper{
     box-shadow:0 13px 18px 0 rgba(0, 0, 0, 0.04);
 }
 
-section#my-work .project-hero-img:before {
+/*section#my-work .project-hero-img:before {
     content: '';
     background: #000000;
     position: absolute;
     width: 98%;
     height: 100%;
     opacity: 0.45;
-}
+}*/
