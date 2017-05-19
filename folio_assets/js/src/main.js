@@ -80,7 +80,7 @@
         for(var i=0;i<posts.length;i++){
 
             //console.log( $('#instagrid'+counter));
-           //$('#instagrid'+counter).append('<div class="col-md-12 insta-post-appender"><img src="'+posts[i]+'"></div>');
+           $('#instagrid'+counter).append('<div class="col-md-12 insta-post-appender"><img src="'+posts[i]+'"></div>');
             console.log("hi");
             counter++;
             if(counter==4){
