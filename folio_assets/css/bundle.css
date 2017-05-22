@@ -303,6 +303,10 @@ section#intro .push-text {
 .work-card .tags-wrapper {
   margin: 25px 0px; }
 
+.project-name-head {
+  letter-spacing: 0.1px;
+  text-transform: uppercase; }
+
 .hero-heading {
   font-size: 40px;
   line-height: 1.4; }

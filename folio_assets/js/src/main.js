@@ -35,7 +35,15 @@
             // JavaScript
             window.sr = ScrollReveal();
             sr.reveal('#intro',{ duration: 2000 });
-            sr.reveal('#my-work',{ duration: 3000 });
+            sr.reveal('#project-1',{ duration: 2600 });
+            sr.reveal('#project-2',{ duration: 2600 });
+            sr.reveal('#project-3',{ duration: 2600 });
+            sr.reveal('#heading-1',{ duration: 2600 });
+             sr.reveal('#heading-2',{ duration: 2600 });
+              sr.reveal('#heading-3',{ duration: 2600 });
+               sr.reveal('#heading-4',{ duration: 2600 });
+           
+            //sr.reveal('#my-work',{ duration: 3000 });
 
             // jQuery to collapse the navbar on scroll
             $(window).scroll(function() {
@@ -55,6 +63,7 @@
                     }, 1500, 'easeInOutExpo');
                     event.preventDefault();
                 });
+                
             });
 
 
