@@ -463,6 +463,22 @@ section#intro .push-text {
   color: #000;
   background: #fff; }
 
+.explore-big-btn {
+  width: 25%;
+  height: 60%;
+  left: 35%;
+  background: #fff;
+  color: #000;
+  border-radius: 2px;
+  top: 20%; }
+
+.explore-big-btn h3 {
+  position: relative;
+  top: 35%;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 5px; }
+
 .card-container {
   background-color: rgba(249, 249, 249, 0.98) !important;
   box-shadow: 0 13px 18px 0 rgba(0, 0, 0, 0.04);
