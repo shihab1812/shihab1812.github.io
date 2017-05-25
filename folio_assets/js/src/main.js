@@ -56,6 +56,7 @@
 
             //jQuery for page scrolling feature - requires jQuery Easing plugin
             $(function() {
+                document.getElementsByClassName("explore-pro-link").href = "http://www.google.com/";
                 $(document).on('click', 'a.page-scroll', function(event) {
                     var $anchor = $(this);
                     $('html, body').stop().animate({

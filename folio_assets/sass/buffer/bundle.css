@@ -69,23 +69,15 @@ ul.nav.navbar-nav.navbar-right li {
   text-transform: uppercase;
   position: relative; }
 
-ul.nav.navbar-nav.navbar-right li:after {
-  position: absolute;
-  content: '';
-  width: 100%;
-  height: 3px;
-  background: #444;
-  transition: width 0.5s ease-in;
-  opacity: 0; }
-
 ul.nav.navbar-nav.navbar-right li > a {
   color: #444; }
 
-ul.nav.navbar-nav.navbar-right li:hover ul.nav.navbar-nav.navbar-right li:after {
-  opacity: 1; }
-
 .small-mrg-t-b {
   margin: 35px 0; }
+
+.aLink {
+  color: #000;
+  text-decoration: none; }
 
 .cust_container_fluid {
   padding: 0 100px; }
@@ -367,6 +359,22 @@ section#intro .push-text {
 .sub-font {
   font-family: "Karla", sans-serif; }
 
+.menu-link {
+  position: relative; }
+
+.menu-link:after {
+  position: absolute;
+  left: 0%;
+  content: '';
+  height: 1px;
+  background: #000;
+  transition: width 0.3s linear;
+  width: 0%;
+  bottom: 0; }
+
+.menu-link:hover:after {
+  width: 105%; }
+
 .well-white {
   background: #fff;
   border: 0px; }
@@ -464,13 +472,20 @@ section#intro .push-text {
   background: #fff; }
 
 .explore-big-btn {
-  width: 25%;
-  height: 60%;
-  left: 35%;
+  width: 20%;
+  height: 50%;
+  left: 40%;
   background: #fff;
   color: #000;
   border-radius: 2px;
-  top: 20%; }
+  top: 25%;
+  transition: all 0.4s ease-in;
+  cursor: pointer; }
+
+.explore-big-btn:hover {
+  background: #000;
+  color: #fff;
+  transition: all 0.4s ease-in; }
 
 .explore-big-btn h3 {
   position: relative;

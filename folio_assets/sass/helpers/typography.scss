@@ -36,3 +36,25 @@
 .sub-font{
      font-family: $supporting-font;
 }
+
+.menu-link{
+    position: relative;
+}
+.menu-link:after{
+    	position: absolute;
+    left: 0%;
+	content: '';
+
+	height: 1px;
+    background: #000;
+    transition: width 0.3s linear;
+    width: 0%;
+    bottom: 0;  
+}
+
+.menu-link:hover:after {
+	width: 105%;
+    
+}
+
+
