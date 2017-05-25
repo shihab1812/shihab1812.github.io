@@ -307,7 +307,10 @@ section#intro {
   font-size: 17.5px;
   letter-spacing: 11px;
   line-height: 2;
-  color: #847f7f; }
+  background: #777b77;
+  padding: 13px 11px;
+  color: #eee;
+  opacity: 0.9; }
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -467,10 +470,10 @@ section#intro .push-text {
   letter-spacing: 0.6px;
   text-transform: uppercase; }
 
-.btn-black-outline {
-  border: 1px solid #444;
+.btn-white {
   color: #000;
-  background: #fff; }
+  background: #fff;
+  border: 1px solid #fdfdfd; }
 
 .explore-big-btn {
   width: 20%;
