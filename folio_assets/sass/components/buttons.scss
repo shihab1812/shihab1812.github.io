@@ -1,68 +1,64 @@
- .explore-btn{
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 3px;
-    position: relative;
-    opacity: 0.75;
-    cursor:pointer;
-}
+ .explore-btn {
+     font-size: 16px;
+     font-weight: 600;
+     letter-spacing: 3px;
+     position: relative;
+     opacity: 0.75;
+     cursor: pointer;
+ }
 
-.explore-btn::before{
-   width: 2px;
-    content: "";
-    height: 34px;
-    background: #060606;
-    position: absolute;
-    top: -8px;
-    left: -48px;
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
+ .explore-btn::before {
+     width: 2px;
+     content: "";
+     height: 34px;
+     background: #060606;
+     position: absolute;
+     top: -8px;
+     left: -48px;
+     -webkit-transform: rotate(90deg);
+     transform: rotate(90deg);
+ }
 
-.explore-btn:hover{
-    transition: all 0.4s ease-out;
-    opacity: 0.6;
-}
+ .explore-btn:hover {
+     transition: all 0.4s ease-out;
+     opacity: 0.6;
+ }
 
-.btn{
-    border-radius: 2px;
-}
+ .btn {
+     border-radius: 2px;
+ }
 
-.btn-lg{
+ .btn-lg {
      padding: 10px 20px;
-}
-.btn-black{
-    background: #444;
-    color: #eee;
-    letter-spacing: 0.6px;
-    text-transform: uppercase;
-   
-}
+ }
 
-.btn-black-outline{
-    border: 1px solid #444;
-    color: #000;
-    background: #fff;
+ .btn-black {
+     background: #444;
+     color: #eee;
+     letter-spacing: 0.6px;
+     text-transform: uppercase;
+ }
 
-}
-.explore-big-btn{
-    width: 25%;
-    height: 60%;
-    left: 35%;
-    background: #fff;
-    color: #000;
-    border-radius: 2px;
-    top: 20%;
+ .btn-black-outline {
+     border: 1px solid #444;
+     color: #000;
+     background: #fff;
+ }
 
-}
+ .explore-big-btn {
+     width: 20%;
+     height: 50%;
+     left: 40%;
+     background: #fff;
+     color: #000;
+     border-radius: 2px;
+     top: 20%;
+ }
 
-.explore-big-btn h3{
-    position: relative;
-    top: 35%;
-    font-size: 3rem;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
-
-
-
+ .explore-big-btn h3 {
+     position: relative;
+     top: 35%;
+     font-size: 3rem;
+     text-transform: uppercase;
+     letter-spacing: 5px;
+ }
