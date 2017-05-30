@@ -56,6 +56,8 @@
 
             //jQuery for page scrolling feature - requires jQuery Easing plugin
             $(function() {
+  
+                $("#loader-sec").show().delay(3800).fadeOut();
                 document.getElementsByClassName("explore-pro-link").href = "http://www.google.com/";
                 $(document).on('click', 'a.page-scroll', function(event) {
                     var $anchor = $(this);
@@ -64,6 +66,13 @@
                     }, 1500, 'easeInOutExpo');
                     event.preventDefault();
                 });
+
+                //AutoType Js function
+                $(".element").typed({
+			strings: ["First sentence.", "Second sentence."],
+			typeSpeed: 0,
+            loop: true
+		});
                 
             });
 

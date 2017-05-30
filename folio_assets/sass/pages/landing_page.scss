@@ -91,3 +91,14 @@ section#intro .push-text{
     letter-spacing: 0.1px;
     text-transform: uppercase;
 }
+
+section.loader-page{
+ width: 100%;
+ height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 5555;
+
+}

@@ -330,6 +330,15 @@ section#intro .push-text {
   letter-spacing: 0.1px;
   text-transform: uppercase; }
 
+section.loader-page {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 5555; }
+
 .hero-heading {
   font-size: 40px;
   line-height: 1.4; }
@@ -381,6 +390,27 @@ section#intro .push-text {
 
 .menu-link:hover:after {
   width: 105%; }
+
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 .well-white {
   background: #fff;
@@ -525,3 +555,80 @@ section#intro .push-text {
   top: 0;
   bottom: 0;
   opacity: 0.45; }
+
+.spinner {
+  -webkit-animation: rotator 1.4s linear infinite;
+  animation: rotator 1.4s linear infinite; }
+
+@-webkit-keyframes rotator {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg); } }
+
+@keyframes rotator {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg); } }
+
+.path {
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  stroke-width: 1px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+  animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite; }
+
+@-webkit-keyframes colors {
+  0% {
+    stroke: #4285F4; }
+  25% {
+    stroke: #DE3E35; }
+  50% {
+    stroke: #F7C223; }
+  75% {
+    stroke: #1B9A59; }
+  100% {
+    stroke: #4285F4; } }
+
+@keyframes colors {
+  0% {
+    stroke: #444; }
+  25% {
+    stroke: #555; }
+  50% {
+    stroke: #666; }
+  75% {
+    stroke: #444; }
+  100% {
+    stroke: #000; } }
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 187; }
+  50% {
+    stroke-dashoffset: 46.75;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg); }
+  100% {
+    stroke-dashoffset: 187;
+    -webkit-transform: rotate(450deg);
+    transform: rotate(450deg); } }
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 187; }
+  50% {
+    stroke-dashoffset: 46.75;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg); }
+  100% {
+    stroke-dashoffset: 187;
+    -webkit-transform: rotate(450deg);
+    transform: rotate(450deg); } }
