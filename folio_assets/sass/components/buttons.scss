@@ -34,17 +34,16 @@
  }
 
  .btn-black {
-     background: #444;
-     color: #eee;
-     letter-spacing: 0.6px;
-     text-transform: uppercase;
+    background: #3956f7;
+    color: #eee;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
  }
 
  .btn-white {
-    
      color: #000;
-     background: #fff;
-     border: 1px solid #fdfdfd;
+     background: #f7f7f7;
+     border: 1px solid #eaeaea;
  }
 
  .explore-big-btn {
@@ -59,21 +58,16 @@
      cursor: pointer;
  }
 
- .explore-big-btn:hover{
+ .explore-big-btn:hover {
      background: #000;
      color: #fff;
-    transition: all 0.4s ease-in;
+     transition: all 0.4s ease-in;
  }
- 
+
  .explore-big-btn h3 {
      position: relative;
      top: 35%;
      font-size: 3rem;
      text-transform: uppercase;
      letter-spacing: 5px;
- 
  }
-
-  
-
- 

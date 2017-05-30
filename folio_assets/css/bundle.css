@@ -120,6 +120,9 @@ section#my-work {
   float: left;
   width: 100%; }
 
+section#medium_blog {
+  margin-top: 50px; }
+
 section#medium_blog .logo-wrapper {
   background-color: rgba(249, 249, 249, 0.98) !important;
   box-shadow: 0 13px 18px 0 rgba(0, 0, 0, 0.04); }
@@ -339,6 +342,13 @@ section.loader-page {
   background: #fff;
   z-index: 5555; }
 
+.tools-slider > div img {
+  height: 100px;
+  width: 100px; }
+
+section#skillset {
+  margin: 80px auto 50px auto; }
+
 .hero-heading {
   font-size: 40px;
   line-height: 1.4; }
@@ -499,15 +509,15 @@ section.loader-page {
   padding: 10px 20px; }
 
 .btn-black {
-  background: #444;
+  background: #3956f7;
   color: #eee;
   letter-spacing: 0.6px;
   text-transform: uppercase; }
 
 .btn-white {
   color: #000;
-  background: #fff;
-  border: 1px solid #fdfdfd; }
+  background: #f7f7f7;
+  border: 1px solid #eaeaea; }
 
 .explore-big-btn {
   width: 20%;
