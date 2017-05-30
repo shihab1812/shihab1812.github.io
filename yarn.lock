@@ -3675,6 +3675,10 @@ type-is@~1.5.1:
     media-typer "0.3.0"
     mime-types "~2.0.9"
 
+"typed.js@https://github.com/mattboldt/typed.js.git":
+  version "1.1.7"
+  resolved "https://github.com/mattboldt/typed.js.git#99f94517492dddd3fa4789cb20570f833ec2cc76"
+
 typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"

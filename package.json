@@ -15,7 +15,8 @@
     "jquery.easing": "https://github.com/gdsmith/jquery.easing.git",
     "photoswipe": "^4.1.2",
     "scrollreveal": "^3.3.5",
-    "tippy.js": "^0.11.2"
+    "tippy.js": "^0.11.2",
+    "typed.js": "https://github.com/mattboldt/typed.js.git"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
