@@ -40,7 +40,8 @@ body {
   background-repeat: repeat-y;
   background-image: url("../images/svg/main-bg.svg");
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility; }
 
 .insta-post-appender {
   margin: 0 3px; }
@@ -331,7 +332,8 @@ section#intro .push-text {
 
 .project-name-head {
   letter-spacing: 0.1px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  opacity: 0.8; }
 
 section.loader-page {
   width: 100%;
@@ -347,7 +349,7 @@ section.loader-page {
   width: 100px; }
 
 section#skillset {
-  margin: 80px auto 50px auto; }
+  margin: 100px auto 50px auto; }
 
 .hero-heading {
   font-size: 40px;
@@ -481,7 +483,7 @@ section#skillset {
   text-transform: uppercase; }
 
 .explore-btn {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 3px;
   position: relative;
