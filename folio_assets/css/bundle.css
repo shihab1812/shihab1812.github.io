@@ -57,7 +57,7 @@ body {
   content: '';
   height: 100%;
   top: 0px;
-  background: #000;
+  background: #fff;
   opacity: 0.3; }
 
 section#insta .virtual-flexbox-grid {
@@ -255,15 +255,21 @@ section#medium_blog .logo-wrapper {
     background: rgba(249, 249, 249, 0.98) !important;
     box-shadow: 0 13px 18px 0 rgba(0, 0, 0, 0.04); } }
 
+ul.nav.navbar-nav.navbar-right li > a:hover {
+  color: #000;
+  transition: all 0.4s ease-in;
+  opacity: 1; }
+
 section#intro {
   margin-top: 85px; }
 
 .hero-paragraph {
   opacity: 0.7;
-  letter-spacing: 0.3px;
   text-align: justify;
   line-height: 2.2;
-  margin-left: 25px; }
+  margin-left: 25px;
+  min-height: 190px;
+  font-size: 15px; }
 
 .vertical-text.about-text {
   top: 53%;
@@ -308,13 +314,14 @@ section#intro {
   width: 120px;
   top: 40%;
   left: -12%;
-  font-size: 17.5px;
+  font-size: 14px;
   letter-spacing: 11px;
   line-height: 2;
-  background: #777b77;
+  /* background: #777b77; */
   padding: 13px 11px;
-  color: #eee;
-  opacity: 0.9; }
+  color: #353232;
+  opacity: 0.9;
+  font-weight: 700; }
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -330,10 +337,11 @@ section#intro .push-text {
 .work-card .tags-wrapper {
   margin: 25px 0px; }
 
-.project-name-head {
+.project-name-head > strong {
   letter-spacing: 0.1px;
   text-transform: uppercase;
-  opacity: 0.8; }
+  opacity: 0.8;
+  font-weight: 300; }
 
 section.loader-page {
   width: 100%;
@@ -513,7 +521,7 @@ section#skillset {
   padding: 10px 20px; }
 
 .btn-black {
-  background: #3956f7;
+  background: #0107ff;
   color: #eee;
   letter-spacing: 0.6px;
   text-transform: uppercase; }
@@ -646,3 +654,17 @@ section#skillset {
     stroke-dashoffset: 187;
     -webkit-transform: rotate(450deg);
     transform: rotate(450deg); } }
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1999px) and (-webkit-min-device-pixel-ratio: 1) {
+  .explore-big-btn h3 {
+    font-size: 1.65rem;
+    top: 27%; } }
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .explore-big-btn h3 {
+    font-size: 2rem;
+    top: 33%; } }
+
+/* ----------- Retina Screens ----------- */
