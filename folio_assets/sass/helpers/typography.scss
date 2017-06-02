@@ -79,4 +79,10 @@
     100% { opacity:1; }
 }
 
+.fnt-white{
+    color: #fff;
+}
 
+.explore-btn.fnt-white::before{
+    background: #eee;
+}
