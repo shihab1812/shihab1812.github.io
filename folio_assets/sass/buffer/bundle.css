@@ -288,6 +288,9 @@ section#intro {
   margin-left: 25px;
   font-size: 15px; }
 
+.hero-img {
+  margin-top: 16%; }
+
 .vertical-text.about-text {
   top: 53%;
   letter-spacing: 4px;
@@ -540,7 +543,13 @@ section#skillset {
 
 .btn {
   border-radius: 2px;
-  box-shadow: 0 13px 18px 0 rgba(0, 0, 0, 0.04); }
+  box-shadow: 0 13px 18px 0 rgba(0, 0, 0, 0.04);
+  transition: all 0.55s ease-in; }
+
+.btn:hover {
+  transition: all 0.4s ease-in;
+  transform: translateY(-4px);
+  box-shadow: 0 13px 18px 0 rgba(0, 0, 0, 0.08); }
 
 .btn-lg {
   padding: 10px 20px; }
@@ -550,6 +559,9 @@ section#skillset {
   color: #eee;
   letter-spacing: 0.6px;
   text-transform: uppercase; }
+
+.btn-black:hover {
+  color: #fff; }
 
 .btn-white {
   color: #000;
