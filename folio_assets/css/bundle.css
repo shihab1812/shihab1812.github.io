@@ -25,7 +25,7 @@ body {
   bottom: 0;
   width: 40px;
   height: 5px;
-  background: #444;
+  /* background: #444;*/
   content: '';
   left: 48.35%; }
 
@@ -376,6 +376,9 @@ section.loader-page {
 
 section#skillset {
   margin: 100px auto 0px auto; }
+
+section#thank-you {
+  margin: 75px auto 15px auto; }
 
 .hero-heading {
   font-size: 40px;
