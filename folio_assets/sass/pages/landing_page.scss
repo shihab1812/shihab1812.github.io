@@ -114,7 +114,7 @@ section.loader-page {
 
 section#skillset {
     margin: 100px auto 0px auto;
-    background: #f7f6f6;
+
     border-top: 1px solid #fafafa;
     padding: 50px 0;
 }
@@ -122,11 +122,45 @@ section#skillset {
 section#thank-you {
     margin: 75px auto 15px auto;
 }
-
-#contact_me .content {
-    font-size: 2.7rem;
+section#thank-you:before{
+    content: '';
+    position: absolute;
+     border: 1px solid #e4e4e4;
+    width: 89px;
+    transform: rotate(90deg);
+    /* height: 5px; */
+    left: calc(50% - 45px);
 }
-
+#contact_me .content {
+    font-size: 2.3rem;
+    
+    line-height: 2.5;
+}
+section#skillset .owl-prev>i, section#skillset .owl-next>i{
+     position: absolute;
+   
+    top: 10%;
+    color: #9e9999;
+    transition: all 0.3s ease-in-out;
+}
+section#skillset .owl-prev>i:hover, section#skillset .owl-next>i:hover{
+  color: #444;
+    transition: all 0.3s ease-in;
+      transform: translateX(5px);
+}
 section#contact_me {
     margin-top: 100px;
 }
+
+.custom-next-owl-btn{
+    
+    right: -6%;
+    
+}
+.custom-prev-owl-btn{
+     
+    left: -6%;
+   
+}
+
+

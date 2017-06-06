@@ -46,6 +46,16 @@ $(window).scroll(function () {
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function () {
 
+
+// Tooltip Generator class 
+new Tippy('.tippy', {
+    position: 'right',
+    animation: 'fade',
+    duration: 300,
+    arrow: true,
+    animateFill: true,
+    size: 'big'
+});
     $("#loader-sec").show().delay(3800).fadeOut();
 
     document.getElementsByClassName("explore-pro-link").href = "http://www.google.com/";
@@ -121,9 +131,9 @@ $(function () {
             },
             1000: {
                 items: 5,
-                nav: false,
+                nav: true,
                 dots: true,
-              
+              center:true,
                  loop:true,
                 margin: 10,
                 responsiveClass: true,
@@ -134,19 +144,12 @@ $(function () {
             }
         }
     });
+    $('section#skillset .owl-nav .owl-prev').html("<i class='fa fa-angle-left fa-3x custom-prev-owl-btn'></i>");
+    $('section#skillset .owl-nav .owl-next').html("<i class='fa fa-angle-right fa-3x custom-next-owl-btn'></i>");
 
 });
 
 
-// Tooltip Generator class 
-new Tippy('.tippy', {
-    position: 'right',
-    animation: 'fade',
-    duration: 300,
-    arrow: true,
-    animateFill: true,
-    size: 'big'
-});
 
 
 // ====================================================================

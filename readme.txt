@@ -2,8 +2,7 @@
 
     git clone https://github.com/shihab1812/shihab1812.github.io.git
     Run ~ yarn install
-    Run ~ gulp concat_all_Lib_Js
-    Run ~ gulp cssLibConcat
+
 
 # Later part
 
