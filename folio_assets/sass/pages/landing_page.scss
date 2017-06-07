@@ -7,7 +7,7 @@ section#intro {
     text-align: justify;
     line-height: 2.2;
     margin-left: 25px;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .hero-img {
@@ -161,6 +161,12 @@ section#contact_me {
      
     left: -6%;
    
+}
+
+section#my-work a{
+    color: #444;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
 }
 
 

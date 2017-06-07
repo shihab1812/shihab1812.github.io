@@ -56,6 +56,7 @@ new Tippy('.tippy', {
     animateFill: true,
     size: 'big'
 });
+//show the loader for intial Second's
     $("#loader-sec").show().delay(3800).fadeOut();
 
     document.getElementsByClassName("explore-pro-link").href = "http://www.google.com/";

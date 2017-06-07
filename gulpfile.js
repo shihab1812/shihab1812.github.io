@@ -9,7 +9,7 @@
 const gulp = require('gulp'), //importing GULP module
       gutil = require('gulp-util'), // module to console log message
       webserver = require('gulp-webserver'), // module to run a webserver
-      autoprefixer = require('gulp-autoprefixer'), // module to add autp-prefixers to css to support properties across all web-browsers
+      autoprefixer = require('gulp-autoprefixer'), // module to add auto-prefixers to css to support properties across all web-browsers
       sass = require('gulp-sass') // module to convert SASS into CSS
       imagemin = require('gulp-imagemin'), // Image Minification
       jshint = require('gulp-jshint'), // A module that logs the missing javascript best practices and gives hint for the cause of error 
