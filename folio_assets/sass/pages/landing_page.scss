@@ -11,7 +11,7 @@ section#intro {
 }
 
 .hero-img {
-    margin-top: 16%;
+    margin-top: 13%;
 }
 
 .vertical-text.about-text {
@@ -55,7 +55,16 @@ section#intro {
 .work-card {
     margin: 75px 0;
 }
-
+.hero-img img{
+        width: 435px;
+    height: auto;
+    webkit-filter: grayscale(65%);
+    -moz-filter: grayscale(65%);
+    -o-filter: grayscale(65%);
+    -ms-filter: grayscale(65%);
+    -webkit-filter: grayscale(65%);
+    filter: grayscale(65%);
+}
 .hero-img .funky-over-font {
     width: 120px;
     top: 40%;
