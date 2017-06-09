@@ -363,12 +363,12 @@ section#intro {
 .hero-img img {
   width: 435px;
   height: auto;
-  webkit-filter: grayscale(65%);
-  -moz-filter: grayscale(65%);
-  -o-filter: grayscale(65%);
-  -ms-filter: grayscale(65%);
-  -webkit-filter: grayscale(65%);
-  filter: grayscale(65%); }
+  webkit-filter: grayscale(80%);
+  -moz-filter: grayscale(80%);
+  -o-filter: grayscale(80%);
+  -ms-filter: grayscale(80%);
+  -webkit-filter: grayscale(80%);
+  filter: grayscale(80%); }
 
 .hero-img .funky-over-font {
   width: 120px;
