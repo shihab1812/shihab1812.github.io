@@ -383,10 +383,34 @@ section#intro {
   opacity: 0.9;
   font-weight: 700; }
 
+.quote-text {
+  font-size: 3rem;
+  line-height: 1.8; }
+
+.author-name {
+  font-size: 2rem; }
+
+.quote-block .content {
+  font-size: 18px; }
+
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  section#intro .call-to-action-btns .btn {
+    margin: 9px 0 12px 0; }
   .work-card .project-hero-img img {
-    height: 300px !important; } }
+    height: 250px !important; }
+  .hero-paragraph {
+    font-size: 13px; }
+  .project-name-head > strong {
+    font-size: 21px; }
+  .mob-about-me-txt {
+    margin-left: -25px; }
+  .quote-text {
+    font-size: 2rem; }
+  .author-name {
+    font-size: 1.7rem; }
+  .quote-block .content {
+    font-size: 1.45rem; } }
 
 .work-card .projects-desc {
   margin: 50px auto 50px auto; }
@@ -437,13 +461,15 @@ section#thank-you:before {
   font-size: 2.3rem;
   line-height: 2.5; }
 
-section#skillset .owl-prev > i, section#skillset .owl-next > i {
+section#skillset .owl-prev > i,
+section#skillset .owl-next > i {
   position: absolute;
   top: 10%;
   color: #9e9999;
   transition: all 0.3s ease-in-out; }
 
-section#skillset .owl-prev > i:hover, section#skillset .owl-next > i:hover {
+section#skillset .owl-prev > i:hover,
+section#skillset .owl-next > i:hover {
   color: #444;
   transition: all 0.3s ease-in;
   -webkit-transform: translateX(5px);
