@@ -56,17 +56,20 @@ section#my-work {
 }
 
 section#medium_blog {
-    margin-top: 0px;
+    margin-top: 75px;
 }
 
 section#medium_blog .logo-wrapper {
-    background-color: #d2f6fd;
+    background-color: rgb(234, 241, 247);
     height: 100%;
     margin-bottom: 0px;
     padding: 0;
     border-radius: 0;
     border: 0;
-    -webkit-filter: grayscale(100%);
+ 
+}
+section#medium_blog .logo-wrapper>img{
+       -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
@@ -83,8 +86,8 @@ section#medium_blog .medium-card-wrp {
     margin: 50px 0 0 0;
     color: #3c3838;
     transition: all 0.4s ease-in;
-    cursor: pointer;
-    background-color: #f4fdff;
+    cursor: default;
+    background-color: #f3f7fd;
 }
 
 

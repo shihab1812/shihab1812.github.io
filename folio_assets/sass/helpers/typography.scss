@@ -86,3 +86,16 @@
 .explore-btn.fnt-white::before{
     background: #eee;
 }
+
+.opacity-light{
+    opacity:0.62;
+}
+
+.opacity-superlight{
+    opacity: 0.45;
+}
+.case-study.quote-block .support-text:hover{
+    cursor: default;
+    opacity: 0.85;
+    transition: all 0.3s ease-in;
+}

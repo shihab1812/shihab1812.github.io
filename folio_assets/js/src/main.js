@@ -47,19 +47,28 @@ $(window).scroll(function () {
 $(function () {
 
 
-// Tooltip Generator class 
-new Tippy('.tippy', {
-    position: 'right',
-    animation: 'fade',
-    duration: 300,
-    arrow: true,
-    animateFill: true,
-    size: 'big'
-});
-//show the loader for intial Second's
+    // Tooltip Generator class 
+    new Tippy('.tippy', {
+        position: 'right',
+        animation: 'fade',
+        duration: 300,
+        arrow: true,
+        animateFill: true,
+        size: 'big'
+    });
+    //show the loader for intial Second's
     $("#loader-sec").show().delay(3800).fadeOut();
 
-    document.getElementsByClassName("explore-pro-link").href = "http://www.google.com/";
+    //set any element to act like anchor tag
+
+    $(".external").click(function (e) {
+        e.preventDefault();
+        var tempLink = $(this).data('link');
+
+        window.open(tempLink, '_blank');
+    });
+
+
     $(document).on('click', 'a.page-scroll', function (event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
@@ -111,7 +120,7 @@ new Tippy('.tippy', {
             0: {
                 items: 1,
                 nav: true,
-                 loop:true,
+                loop: true,
                 margin: 10,
                 responsiveClass: true,
                 autoplay: true,
@@ -122,7 +131,7 @@ new Tippy('.tippy', {
             600: {
                 items: 3,
                 nav: false,
-                 loop:true,
+                loop: true,
                 margin: 10,
                 responsiveClass: true,
                 autoplay: true,
@@ -134,8 +143,8 @@ new Tippy('.tippy', {
                 items: 5,
                 nav: true,
                 dots: true,
-              center:true,
-                 loop:true,
+                center: true,
+                loop: true,
                 margin: 10,
                 responsiveClass: true,
                 autoplay: true,
