@@ -25,3 +25,13 @@ ul.nav.navbar-nav.navbar-right li > a:hover{
     transition: all 0.4s ease-in;
     opacity: 1;
 }
+nav.mob-header{
+    background: #fff;
+    border: 0px;
+}
+nav.mob-header a.navbar-brand{
+    margin-left: calc(50% - 44px);
+}
+nav.mob-header a.navbar-brand>img{
+  height: 60px;
+}
