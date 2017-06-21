@@ -89,7 +89,7 @@ $(function () {
         sr.reveal('#intro', {
             duration: 2000
         });
-        sr.reveal('#project-1', {
+       /*sr.reveal('#project-1', {
             duration: 2600
         });
         sr.reveal('#project-2', {
@@ -109,7 +109,7 @@ $(function () {
         });
         sr.reveal('#heading-4', {
             duration: 2600
-        });
+        });*/
 
     }, 3750);
 

@@ -60,7 +60,7 @@ section#medium_blog {
 }
 
 section#medium_blog .logo-wrapper {
-    background-color: rgb(234, 241, 247);
+    background-color: #f3f3f3;
     height: 100%;
     margin-bottom: 0px;
     padding: 0;
@@ -73,7 +73,13 @@ section#medium_blog .logo-wrapper>img{
     -moz-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
-    filter: grayscale(80%);
+    filter: grayscale(100%);
+     transition: all 0.4s ease-in;
+}
+
+section#medium_blog .logo-wrapper>img:hover{
+     filter: grayscale(50%);
+     transition: all 0.4s ease-in;
 }
 
 section#medium_blog .medium-card-wrp:hover {
@@ -87,7 +93,7 @@ section#medium_blog .medium-card-wrp {
     color: #3c3838;
     transition: all 0.4s ease-in;
     cursor: default;
-    background-color: #f3f7fd;
+    background-color: #f9f9f9;
 }
 
 
