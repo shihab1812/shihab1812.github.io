@@ -2,6 +2,9 @@
     font-size: 40px;
     line-height: 1.4;
 }
+.hero-heading + p.support-text{
+    font-size: 15px;
+}
 
 .vertical-text {
 	transform: rotate(90deg);

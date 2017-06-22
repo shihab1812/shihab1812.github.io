@@ -137,7 +137,7 @@ ul.nav.navbar-nav.navbar-right li > a {
   padding: 0 100px; }
 
 .inner-container {
-  padding: 55px 80px; }
+  padding: 55px 80px 0 80px; }
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -364,6 +364,9 @@ nav.mob-header a.navbar-brand > img {
 section#intro {
   margin-top: 85px; }
 
+.about-me-content {
+  margin-top: 15px; }
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   section#intro {
     margin-top: -6px; } }
@@ -382,7 +385,7 @@ section.resume .context .heading {
   margin-top: 5px; }
 
 section#intro .hero-paragraph {
-  font-size: 17px;
+  font-size: 14px;
   opacity: 0.7;
   text-align: justify;
   line-height: 2.2;
@@ -401,11 +404,15 @@ section#intro .hero-paragraph {
   margin-left: 25px;
   font-size: 15px; }
 
-.hero-img {
-  margin-top: 13%; }
+section#intro .hero-img {
+  margin-top: -8.5%; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  section#intro .hero-img {
+    margin-top: 13%; } }
 
 .vertical-text.about-text {
-  top: 53%;
+  top: 50%;
   letter-spacing: 4px;
   font-size: 16px;
   font-weight: bold;
@@ -479,7 +486,7 @@ section#intro .hero-paragraph {
   section#intro .call-to-action-btns .btn {
     margin: 9px 0 12px 0; }
   .work-card .project-hero-img img {
-    height: 250px !important; }
+    height: 225px !important; }
   .hero-paragraph {
     font-size: 13px; }
   .project-name-head > strong {
@@ -577,6 +584,9 @@ section#my-work a {
 .hero-heading {
   font-size: 40px;
   line-height: 1.4; }
+
+.hero-heading + p.support-text {
+  font-size: 15px; }
 
 .vertical-text {
   transform: rotate(90deg);
