@@ -9,7 +9,9 @@
 
 /* Portrait and Landscape */
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px)  {
     .inner-container {
         padding: $inner_container_p - 75px;
     }
@@ -107,7 +109,7 @@ section#medium_blog .medium-card-wrp {
 }*/
 
 section#my-work .project-hero-img {
-    webkit-filter: grayscale(60%);
+    -webkit-filter: grayscale(60%);
     -moz-filter: grayscale(60%);
     -o-filter: grayscale(60%);
     -ms-filter: grayscale(60%);

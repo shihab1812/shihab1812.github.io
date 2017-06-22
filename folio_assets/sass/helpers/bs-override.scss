@@ -1,18 +1,19 @@
-.well-white{
+.well-white {
     background: #fff;
     border: 0px;
 }
-.cust-conatainer-fluid{
+
+.cust-conatainer-fluid {
     padding: 0 120px;
 }
 
 
 /* Portrait and Landscape */
+
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-   .cust-conatainer-fluid{
-    padding: 10px;
-}
+and (min-device-width: 320px) 
+and (max-device-width: 480px) {
+    .cust-conatainer-fluid {
+        padding: 10px;
+    }
 }

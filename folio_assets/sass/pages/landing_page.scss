@@ -2,7 +2,9 @@ section#intro {
     margin-top: 85px;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px)  {
     section#intro {
         margin-top: -6px;
     }
@@ -32,7 +34,9 @@ section#intro .hero-paragraph {
     margin-left: 25px;
     margin-top: 31px;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px){
     section#intro .hero-paragraph {
  
     margin-top: 21px;
@@ -97,7 +101,7 @@ section#intro .hero-paragraph {
 .hero-img img {
     width: 435px;
     height: auto;
-    webkit-filter: grayscale(80%);
+    -webkit-filter: grayscale(80%);
     -moz-filter: grayscale(80%);
     -o-filter: grayscale(80%);
     -ms-filter: grayscale(80%);
@@ -135,7 +139,9 @@ section#intro .hero-paragraph {
 
 /* Portrait and Landscape */
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px)  {
     section#intro .call-to-action-btns .btn {
         margin: 9px 0 12px 0;
     }
@@ -218,7 +224,9 @@ section#thank-you:before {
     left: calc(50% - 45px);
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px) {
     section#thank-you:before {
         border: 0px;
     }
