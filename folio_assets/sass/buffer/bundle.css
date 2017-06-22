@@ -355,11 +355,11 @@ nav.mob-header {
   border: 0px; }
 
 nav.mob-header a.navbar-brand {
-  margin-left: calc(50% - 50px);
+  margin-left: calc(50% - 43px);
   margin-top: 7px; }
 
 nav.mob-header a.navbar-brand > img {
-  height: 75px; }
+  height: 65px; }
 
 section#intro {
   margin-top: 85px; }
@@ -409,8 +409,7 @@ section#intro .hero-img {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   section#intro .hero-img {
-    margin-top: 13%;
-    margin-left: 10px; } }
+    margin-top: 13%; } }
 
 .vertical-text.about-text {
   top: 50%;
