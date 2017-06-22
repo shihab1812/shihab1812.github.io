@@ -111,7 +111,7 @@ const gulp = require('gulp'), //importing GULP module
 
         //Vendor Js concat and uglify task ... run this task when ever new library is added to node_modules that is not a dev-dependency
         gulp.task('concat_all_Lib_Js',function(){
-            var libs=['node_modules/jquery/dist/jquery.min.js','shihab1812.github.io/node_modules/bootstrap/dist/js/bootstrap.min.js','node_modules/tippy.js/dist/tippy.min.js','node_modules/jquery.easing/jquery.easing.min.js','node_modules/instafeed.js/instafeed.min.js','node_modules/scrollreveal/dist/scrollreveal.min.js','node_modules/photoswipe/dist/photoswipe.min.js','node_modules/photoswipe/dist/photoswipe-ui-default.min.js','node_modules/typed.js/dist/typed.min.js','node_modules/owl.carousel/dist/owl.carousel.min.js'];
+            var libs=['node_modules/jquery/dist/jquery.min.js','node_modules/bootstrap/dist/js/bootstrap.min.js','node_modules/tippy.js/dist/tippy.min.js','node_modules/jquery.easing/jquery.easing.min.js','node_modules/instafeed.js/instafeed.min.js','node_modules/scrollreveal/dist/scrollreveal.min.js','node_modules/photoswipe/dist/photoswipe.min.js','node_modules/photoswipe/dist/photoswipe-ui-default.min.js','node_modules/typed.js/dist/typed.min.js','node_modules/owl.carousel/dist/owl.carousel.min.js'];
             return gulp.src(libs)
             .pipe(concat('vendorBundle.js'))
             .pipe(gulp.dest('./folio_assets/libs/'));

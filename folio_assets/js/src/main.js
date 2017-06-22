@@ -32,6 +32,7 @@ function msieversion() {
 //  ====================================================================
 
 
+
 //sr.reveal('#my-work',{ duration: 3000 });
 
 // jQuery to collapse the navbar on scroll
@@ -45,7 +46,8 @@ $(window).scroll(function () {
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function () {
-
+    // Intializing PopOver
+       $('[data-toggle="popover"]').popover();
 
     // Tooltip Generator class 
     new Tippy('.tippy', {
@@ -57,8 +59,16 @@ $(function () {
         size: 'big'
     });
     //show the loader for intial Second's
-    $("#loader-sec").show().delay(3800).fadeOut();
+    $("#loader-sec").show().delay(3800).fadeOut(function() {
+    // Animation complete.
+  
+    $('.animated-fInDown').removeClass('vs-none').addClass('animated fadeInDown');
+    $('.animated-fInUp').removeClass('vs-none').addClass('animated fadeInUp');
+       $('.animated-fIn').removeClass('vs-none').addClass('animated flipIn');
+  });
 
+    //intro animation
+ 
     //set any element to act like anchor tag
 
     $(".external").click(function (e) {
@@ -83,12 +93,12 @@ $(function () {
         typeSpeed: 0,
         loop: true
     });
-    setTimeout(function () {
+   // setTimeout(function () {
         // JavaScript
-        window.sr = ScrollReveal();
-        sr.reveal('#intro', {
-            duration: 2000
-        });
+        //window.sr = ScrollReveal();
+        //sr.reveal('#intro', {
+          //  duration: 2000
+        //});
        /*sr.reveal('#project-1', {
             duration: 2600
         });
@@ -111,7 +121,7 @@ $(function () {
             duration: 2600
         });*/
 
-    }, 3750);
+  //  }, 3750);
 
     //Intiate the carousel
     $(".owl-carousel").owlCarousel({

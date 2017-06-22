@@ -20,7 +20,10 @@ a {
     text-decoration: none;
 }
 
-
+a.btn:visited,
+a.btn:focus {
+    color: #eee;
+}
 
 .insta-post-appender {
     margin: 0 3px;
@@ -79,4 +82,41 @@ ul.nav.navbar-nav.navbar-right li>a {
     filter: grayscale(0%);
     transition: all 0.3s ease-in;
     cursor: pointer;
+}
+
+.popover {
+    min-width: 300px !important;
+    box-shadow: 0 2px 32px 0 rgba(0, 0, 0, .1) !important;
+    border: 0px !important;
+    background: #444 !important;
+}
+
+.popover .popover-content {
+    font-size: 13px !important;
+    color: #fff !important;
+    background: #444 !important;
+    letter-spacing: 0.3px;
+}
+
+.popover .popover-title {
+    font-size: 17px !important;
+    color: #eee;
+    font-family: $supporting-font;
+    letter-spacing: 0.2px !important;
+    background:#444 !important;
+    border-bottom: 0px;
+}
+.popover .arrow:after{
+     border-right-color: #444 !important;
+
+}
+.animated {
+  -webkit-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.vs-none{
+    visibility: hidden;
 }
