@@ -64,7 +64,7 @@ $(function () {
   
     $('.animated-fInDown').removeClass('vs-none').addClass('animated fadeInDown');
     $('.animated-fInUp').removeClass('vs-none').addClass('animated fadeInUp');
-       $('.animated-fIn').removeClass('vs-none').addClass('animated flipIn');
+       $('.animated-fIn').removeClass('vs-none').addClass('animated fadeIn');
   });
 
     //intro animation
