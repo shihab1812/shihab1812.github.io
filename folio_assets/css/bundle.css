@@ -43,6 +43,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility; }
 
+.external {
+  cursor: pointer; }
+
 a {
   font-weight: 400;
   color: #0107ff;
@@ -410,7 +413,8 @@ section#intro .hero-img {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   section#intro .hero-img {
-    margin-top: 13%; } }
+    margin-top: 13%;
+    margin-left: 14px; } }
 
 .vertical-text.about-text {
   top: 50%;
