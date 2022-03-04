@@ -54,6 +54,7 @@ angular.module('timezoneApp.controllers').controller('mainController', function 
 		$scope.searchResBoxFlag = true; // enabling the get time btn
 		$scope.v_timezone1 = v_timezone1; // extarcting the timezone of selected country
 		$scope.cur_flag = cur_flag; // extracting the falg image name
+		$scope.triggerSearchBtn();
 	};
 
 
