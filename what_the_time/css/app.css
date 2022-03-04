@@ -628,10 +628,11 @@ section.time-result {
 
 .code-info {
     padding: 15px 5px;
+    background: #eee;
 }
 
 .code-info:hover {
-    background: #eee;
+    background: #ddd;
     transition: all 0.4s ease-in-out;
     cursor: pointer;
 }
